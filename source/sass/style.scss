@@ -1,6 +1,32 @@
+@import "page-header.scss";
+@import "page-main.scss";
+@import "main-nav.scss";
+@import "main-card.scss";
+@import "how-work.scss";
+@import "full-product.scss";
+@import "card.scss";
+@import "catalog";
+@import "catalog-card";
+@import "visability-hidden.scss";
+@import "site-list.scss";
+@import "social.scss";
+@import "section-product.scss";
+
+
+html,
 body {
-  background: red;
+  background: #ffffff;
   margin: 0 auto;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
-  /*для пуллреквеста на время*/
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
 }

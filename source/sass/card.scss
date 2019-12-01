@@ -1,0 +1,38 @@
+.card {
+  display: block;
+  border: 1px solid green;
+  background-color: #f2f2f2;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+
+  margin-left: 20px;
+}
+
+.card__image {
+  margin-left: 20px;
+}
+
+.card__name {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.card__catalog {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: black;
+
+  margin-left: 20px;
+}
+
+.card__catalog a {
+  border-top: 1px solid #d9d9d9;
+
+  margin-left: 20px;
+}

@@ -1,0 +1,22 @@
+
+.catalog-card {
+  display: block;
+  border: 1px solid black;
+}
+
+.catalog-card__name {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-card__spec tr {
+  font-size: 12px;
+  line-height: 16px;
+  color: #767676;
+}
+
+.catalog-card__button {
+  color: white;
+  background-color: #68b738;
+}
