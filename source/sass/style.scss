@@ -1,3 +1,33 @@
+body {
+  background: #ffffff;
+  margin: 0 auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 @import "page-header.scss";
 @import "page-main.scss";
 @import "main-nav.scss";
@@ -12,21 +42,8 @@
 @import "social.scss";
 @import "section-product.scss";
 
-
-html,
-body {
-  background: #ffffff;
-  margin: 0 auto;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-li {
-  list-style-type: none;
+@font-face {
+  font-family: "Oswald";
+  src: url("oswaldmedium.woff") format("woff") url("oswaldmedium.woff2") format("woff2"),
+    url("oswaldregular.woff") format("woff") url("oswaldregular.woff2") format("woff2");
 }
