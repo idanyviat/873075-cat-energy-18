@@ -1,32 +1,164 @@
 .main-card {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  /*времено для сетки*/
+  min-height: 500px;
 }
 
 .main-card__item {
-  margin-bottom: 135px;
-
-  background-color: #64a83b;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px;
+  padding-bottom: 150px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: url("/img/index-background-mobile@1x.jpg") no-repeat #64a83b;
+  background-size: 320px 320px;
   color: white;
 }
 
 .main-card__item h2 {
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 32px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .main-card__item p {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
 }
 
+.main-card__product {
+  display: inline-block;
+  position: absolute;
+  top: 435px;
+}
 
 .main-card__btn {
-
+  padding-left: 66px;
+  padding-right: 66px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   margin-right: 20px;
   margin-left: 20px;
+  margin-bottom: 23px;
 
   background-color: #68b738;
   color: white;
   text-align: center;
+}
+/*Требует доработки*/
+@media (min-width: $tablet-width) {
+  .main-card {
+    min-width: 768px;
+    min-height: 850px;
+  }
+
+  .main-card__item {
+    margin-bottom: 0;
+    padding-top: 29px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    color: white;
+    background-image: none;
+  }
+
+  .main-card__item h2 {
+    font-size: 60px;
+    line-height: 60px;
+    color: black;
+    text-align: start;
+    z-index: 2;
+  }
+
+  .main-card__item p {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-align: start;
+    z-index: 2;
+  }
+
+  .main-card__product {
+    display: inline-block;
+    position: absolute;
+    top: 535px;
+    left: 300px;
+    z-index: 1;
+  }
+
+  .main-card__btn {
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 23px;
+    width: 245px;
+
+    background-color: #68b738;
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-card {
+    min-width: 1300px;
+    min-height: 850px;
+  }
+
+  .main-card__item {
+    min-width: 610px;
+    margin-bottom: 0;
+    padding-top: 29px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: white;
+    color: white;
+  }
+
+  .main-card__item h2 {
+    font-size: 60px;
+    line-height: 60px;
+    color: black;
+    text-align: start;
+  }
+
+  .main-card__item p {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: black;
+    text-align: start;
+  }
+
+  .main-card__product {
+    background-color: #589234;
+  }
+
+  .main-card__btn {
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 23px;
+    width: 245px;
+
+    background-color: #68b738;
+    color: white;
+    text-align: center;
+  }
 }

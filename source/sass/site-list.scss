@@ -1,4 +1,10 @@
 
+.site-list {
+  min-width: 320px;
+  /* Временно для сетки */
+  min-height: 198px;
+}
+
 .site-list__item {
   color: black;
   text-transform: uppercase;
@@ -7,4 +13,10 @@
   font-weight: 700;
 
   border-top: 1px solid #e6e6e6;
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    min-width: 1220px;
+  }
 }

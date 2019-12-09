@@ -1,22 +1,155 @@
-
 .catalog-card {
-  /*Заглушка*/
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  vertical-align: top;
+  width: 280px;
+  margin-top: 23px;
 }
 
 .catalog-card__name {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-right: 20px;
+  width: 118px;
+  height: 50px;
+  flex-basis: 100%;
 }
 
 .catalog-card__spec tr {
+  display: inline-grid;
   font-size: 12px;
   line-height: 16px;
-  color: #767676;
+  color: black;
+}
+
+.catalog-card__image {
+  min-width: 140px;
+  min-height: 144px;
+  /*Временно*/
+  background-color: red;
+  align-self: stretch;
 }
 
 .catalog-card__button {
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   color: white;
+  text-align: center;
   background-color: #68b738;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card {
+    display: block;
+    width: 280px;
+    min-height: 431px;
+    margin-top: 23px;
+    margin-right: 60px;
+    background-color: #f2f2f2;
+  }
+
+  .catalog-card__name {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    min-width: 118px;
+    height: 50px;
+    flex-basis: 100%;
+  }
+
+  .catalog-card__spec tr {
+    display: inline-grid;
+    font-size: 12px;
+    line-height: 16px;
+    color: black;
+  }
+
+  .catalog-card__image {
+    min-width: 140px;
+    min-height: 144px;
+    margin-left: 73px;
+    /*Временно*/
+    background-color: red;
+    align-self: stretch;
+  }
+
+  .catalog-card__button {
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: white;
+    text-align: center;
+    background-color: #68b738;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    vertical-align: top;
+    width: 280px;
+    margin-top: 23px;
+  }
+
+  .catalog-card__name {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    width: 118px;
+    height: 50px;
+    flex-basis: 100%;
+  }
+
+  .catalog-card__spec {
+    display: block;
+    position: relative;
+    left: 165px;
+    top: -70px;
+  }
+
+  .catalog-card__spec tr {
+    display: inline-grid;
+    font-size: 12px;
+    line-height: 16px;
+    color: black;
+  }
+
+  .catalog-card__image {
+    min-width: 140px;
+    min-height: 144px;
+    /*Временно*/
+    background-color: red;
+    align-self: stretch;
+  }
+
+  .catalog-card__button {
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: white;
+    text-align: center;
+    background-color: #68b738;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid #ededed;
+  }
 }

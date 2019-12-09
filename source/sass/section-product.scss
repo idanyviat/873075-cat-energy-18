@@ -1,4 +1,10 @@
 .section-product {
   /*Заглушка*/
-  text-align: center;
+  margin-left: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  .section-product {
+    display: flex;
+  }
 }

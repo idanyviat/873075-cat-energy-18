@@ -1,3 +1,12 @@
+.full-product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 208px;
+  width: 280px;
+  margin-left: 20px;
+}
 
 .full-product__ollproduct {
   font-size: 16px;
@@ -16,4 +25,95 @@
   line-height: 20px;
   color: #444444;
   text-transform: uppercase;
+  display: inline-block;
+  width: 280px;
+  height: 40px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  text-align: center;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  border-bottom: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .full-product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 208px;
+    width: 280px;
+    margin-left: 20px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .full-product__ollproduct {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .full-product__full {
+    font-size: 12px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  .full-product__button {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .full-product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 208px;
+    width: 280px;
+    margin-left: 20px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .full-product__ollproduct {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .full-product__full {
+    font-size: 12px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  .full-product__button {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 280px;
+    height: 40px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    border-bottom: 1px solid #ededed;
+  }
 }

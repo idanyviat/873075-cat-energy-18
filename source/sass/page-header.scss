@@ -1,3 +1,24 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+
   background-color: #ffffff;
+}
+
+.page-header__logo {
+  min-height: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    order: 2;
+    min-height: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    order: 3;
+    min-height: 68px;
+  }
 }

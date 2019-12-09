@@ -1,6 +1,11 @@
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 body {
   background: #ffffff;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -29,6 +34,7 @@ html {
 @import "site-list.scss";
 @import "social.scss";
 @import "section-product.scss";
+@import "mixins.scss";
 
 @font-face {
   font-family: "Oswald";
