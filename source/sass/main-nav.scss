@@ -13,9 +13,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    width: auto;
-    margin: 0;
+  .site-list {
+    width: 570px;
+
+    /* Временно для сетки */
+    min-height: 70px;
   }
 }
 
