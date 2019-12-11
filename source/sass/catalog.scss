@@ -20,9 +20,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: flex-start;
     margin-left: 30px;
     min-width: 708px;
@@ -33,20 +31,10 @@
     border-top: none;
     border-bottom: none;
     text-align: left;
-    flex-basis: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .catalog {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-left: 30px;
-    min-width: 708px;
-  }
-
   .catalog__info {
     margin-right: 100px;
     border-top: none;

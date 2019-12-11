@@ -51,15 +51,9 @@
 
 @media (min-width: $tablet-width) {
   .card {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     align-items: flex-end;
     width: 708px;
     min-height: 372px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    background-color: #f2f2f2;
   }
 
   .card img {
@@ -72,55 +66,30 @@
   }
 
   .card__image {
-    margin-left: 20px;
     margin-top: -300px;
   }
 
   .card h3 {
-    margin-left: 13px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 30px;
     width: 420px;
   }
 
   .card p {
-    display: inline-block;
-    font-size: 14px;
-    line-height: 20px;
-    color: #444444;
     text-align: start;
-    margin-left: 20px;
     width: 420px;
   }
 
   .card__catalog {
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: black;
     border-top: none;
-    padding-top: 21px;
-    padding-right: 130px;
-    margin-left: 20px;
     padding-bottom: 36px;
-    text-decoration: none;
     width: 420px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .card {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     align-items: flex-end;
     width: 570px;
     min-height: 372px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    background-color: #f2f2f2;
   }
 
   .card:last-of-type {
@@ -129,7 +98,6 @@
 
   .card img {
     order: 0;
-    align-self: flex-end;
     min-height: 107px;
     width: 100px;
     padding-bottom: 0;

@@ -28,7 +28,6 @@
 
 @media (min-width: $tablet-width) {
   .site-list {
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: none;
@@ -41,10 +40,6 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    display: flex;
-    flex-direction: row;
-    align-items: none;
-    justify-content: flex-end;
     min-width: 1440px;
   }
 }
