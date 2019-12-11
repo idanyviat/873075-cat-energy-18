@@ -1,3 +1,11 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  /* Временно для сетки */
+  min-height: 198px;
+}
 
 .site-list__item {
   color: black;
@@ -5,6 +13,33 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
+  text-align: center;
 
+  padding-top: 25px;
+  padding-bottom: 25px;
+  min-width: 320px;
   border-top: 1px solid #e6e6e6;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: none;
+    width: 570px;
+
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    min-width: 1440px;
+  }
 }

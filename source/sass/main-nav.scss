@@ -1,5 +1,28 @@
-
 .main-nav {
-  /*Заглушка*/
-  text-align: center;
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 570px;
+
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1440px;
+  }
 }

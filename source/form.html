@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Кэт энерджи Каталог</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -17,7 +18,7 @@
           <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">Каталог</a>
+          <a href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
           <a href="#">Подбор программы</a>
@@ -26,7 +27,37 @@
     </nav>
   </header>
   <main>
+    <section class="form-head">
+      <div class="form-head__list">
+        <h2>Подбор программы</h2>
+        <p>Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
+      </div>
+    </section>
     <section>
+      <form class="data-list">
+        <fieldset class="data-list__info">
+          <label><input type="text" placeholder="Барсик">Имя:*</label>
+          <label><input type="text" placeholder="7">Вес (кг):*</label>
+          <label><input type="text" placeholder="7">Возраст(лет):</label>
+        </fieldset>
+        <fieldset class="data-list__radio">
+          <legend>Контактные данные (владельца кота)</legend>
+          <label><input type="radio">Похудение</label>
+          <label><input type="radio">Набор массы</label>
+          <label><input type="radio">Не знаю (нужен ваш совет)</label>
+        </fieldset>
+        <fieldset class="data-list__field">
+          <legend>Коментарий</legend>
+          <textarea></textarea>
+        </fieldset>
+        <fieldset class="data-list__checkbox">
+          <legend>Дополнительно</legend>
+          <label><input type="checkbox">Сахорозаменитель</label>
+          <label><input type="checkbox">Питевая вода</label>
+          <label><input type="checkbox">Молоко</label>
+          <label><input type="checkbox">Витамины</label>
+        </fieldset>
+      </form>
     </section>
   </main>
   <footer>

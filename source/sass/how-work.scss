@@ -1,19 +1,73 @@
-
 .how-work__title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 60px;
 
   margin-left: 20px;
   padding-left: 2px;
 }
 
+.block-title {
+  min-width: 280px;
+}
+
 .how-work__item {
   font-size: 14px;
   line-height: 18px;
-
+  margin-bottom: 20px;
+  list-style-type: none;
   margin-left: 20px;
 }
+/*
+.how-work__item li::before {
+  @include even(1) {
+    position: absolute;
+    background-image: url("/img/advantage-leaf@1x.png") no-repeat #68b738;
+    background-size: 60px 60px;
+  }
 
-.how-work__item li {
-  margin-bottom: 20px;
+  @include even(2) {
+    position: absolute;
+    background-image: url("/img/advantage-leaf@1x.png") no-repeat #68b738;
+    background-size: 60px 60px;
+  }
+
+  @include even(3) {
+    position: absolute;
+    background-image: url("/img/advantage-leaf@1x.png") no-repeat #68b738;
+    background-size: 60px 60px;
+  }
+
+  @include even(4) {
+    position: absolute;
+    background-image: url("/img/advantage-leaf@1x.png") no-repeat #68b738;
+    background-size: 60px 60px;
+  }
+}
+*/
+
+@media (min-width: $tablet-width) {
+  .how-work__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .how-work__item li {
+    width: 202px;
+    height: 230px;
+    margin-right: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-work__item {
+    flex-wrap: nowrap;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+
+  .how-work__item li {
+    width: 245px;
+    margin-right: 80px;
+  }
 }

@@ -1,4 +1,19 @@
-
 .page-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    min-width: 1300px;
+  }
 }
