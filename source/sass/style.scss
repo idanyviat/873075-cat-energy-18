@@ -1,5 +1,6 @@
 $tablet-width: 768px;
 $desktop-width: 1440px;
+$mobile-width-only: 767px;
 
 body {
   background: #ffffff;
@@ -36,6 +37,8 @@ html {
 @import "section-product.scss";
 @import "mixins.scss";
 @import "container.scss";
+@import "form-head.scss";
+@import "data-list.scss";
 
 @font-face {
   font-family: "Oswald";

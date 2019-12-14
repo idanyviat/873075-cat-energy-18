@@ -13,25 +13,17 @@
 @media (min-width: $tablet-width) {
   .page-header {
     flex-wrap: nowrap;
+    margin: 0 auto;
   }
 
   .page-header__logo {
     order: 0;
     min-height: 65px;
   }
-
-  .page-header__toggle {
-    display: none;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    order: 0;
     min-height: 68px;
-  }
-
-  .page-header__toggle {
-    display: none;
   }
 }

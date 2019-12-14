@@ -105,8 +105,16 @@
 
 @media (min-width: $desktop-width) {
   .main-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     min-width: 1300px;
     min-height: 850px;
+
+    &::before {
+      content: url ("../img/index-background-desktop@1x.jpg");
+      position: absolute;
+    }
   }
 
   .main-card__item {

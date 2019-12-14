@@ -1,0 +1,71 @@
+.data-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.data-list__info {
+  display: flex;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.data-list__data {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.data-list__data input {
+  height: 45px;
+  width: 229px;
+  margin-bottom: 14px;
+  margin-left: 16px;
+
+  &:nth-child(2) {
+    width: 204px;
+    margin-left: 10px;
+  }
+
+  &:nth-child(3) {
+    width: 172px;
+    margin-left: 16px;
+  }
+}
+
+.data-list__radio {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  min-width: 320px;
+}
+
+.data-list__mail {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  min-width: 320px;
+}
+
+.data-list__field {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  min-width: 320px;
+}
+
+textarea {
+  min-width: 280px;
+  height: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.data-list__checkbox {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
