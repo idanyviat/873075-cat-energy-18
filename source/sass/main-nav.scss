@@ -14,6 +14,7 @@
   position: relative;
   top: 0;
   right: 0;
+  left: 250px;
   z-index: 2;
   display: block;
   width: 70px;
@@ -49,10 +50,10 @@
   box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
 
-.main-nav__toggle .main-nav--opened {
+.main-nav--opened .main-nav__toggle {
   top: 0;
   right: auto;
-  left: 0;
+  left: 250px;
 
   &::before,
   &::after {
@@ -98,10 +99,10 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 570px;
-
+    min-width: 570px;
+    margin-right: 0;
     /* Временно для сетки */
-    min-height: 70px;
+    height: 70px;
   }
 
   .main-nav__toggle {

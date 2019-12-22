@@ -10,11 +10,9 @@
 .main-card__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 150px;
-  padding-bottom: 150px;
   padding-right: 20px;
   padding-left: 20px;
-  background: url("/img/index-background-mobile@1x.jpg") no-repeat #64a83b;
+  background: url("/img/index-background-mobile@1x.jpg") no-repeat;
   background-size: 320px 320px;
   color: white;
 }
@@ -35,8 +33,7 @@
 
 .main-card__product {
   display: inline-block;
-  position: absolute;
-  top: 435px;
+  position: relative;
 }
 
 .main-card__btn {
@@ -60,6 +57,7 @@
   }
 
   .main-card__item {
+    height: 300px;
     margin-bottom: 0;
     padding-top: 29px;
     padding-bottom: 50px;
@@ -86,12 +84,13 @@
   }
 
   .main-card__product {
-    top: 535px;
-    left: 300px;
+    top: 3px;
+    left: 149px;
     z-index: 1;
   }
 
   .main-card__btn {
+    position: absolute;
     padding-left: 26px;
     padding-right: 26px;
     padding-top: 17px;
@@ -100,6 +99,7 @@
     margin-left: 20px;
     margin-bottom: 23px;
     width: 245px;
+    z-index: 2;
   }
 }
 

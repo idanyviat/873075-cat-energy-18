@@ -15,7 +15,7 @@
       <button class="main-nav__toggle" type="button"><span class="visability-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a href="#">Главная</a>
+          <a href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
           <a href="catalog.html">Каталог продукции</a>
@@ -27,7 +27,7 @@
     </nav>
   </header>
   <main>
-    <h1 class="vvisability-hidden">Программа</h1>
+    <h1 class="visability-hidden">Программа</h1>
     <section class="form-head">
       <div class="form-head__list">
         <h2>Подбор программы</h2>
@@ -35,38 +35,44 @@
       </div>
     </section>
     <section>
-      <form class="data-list">
-        <fieldset class="data-list__info">
-          <label class="data-list__data" for="name">Имя:*<input type="text" id="name" placeholder="Барсик"></label>
-          <label class="data-list__data" for="weight">Вес (кг):*<input type="text" id="weight" placeholder="7"></label>
-          <label class="data-list__data" for="age">Возраст(лет):<input type="text" id="age" placeholder="7"></label>
-        </fieldset>
-        <fieldset class="data-list__radio">
-          <label for="losing"><input type="radio" id="losing">Похудение</label>
-          <label for="gain"><input type="radio" id="gain">Набор массы</label>
-          <label for="no-savvy"><input type="radio" id="no-savvy">Не знаю (нужен ваш совет)</label>
-        </fieldset>
-        <fieldset class="data-list__mail">
-            <legend>Контактные данные (владельца кота)</legend>
-            <label class="data-list__data" for="email">Е-mail:*<input type="text" id="email" placeholder="kuklachev@gmail.com"></label>
-            <label class="data-list__data" for="tel">Телефон:*<input type="text" id="tel" placeholder="8 (960) 900-60-90"></label>
-        </fieldset>
-        <fieldset class="data-list__field">
-          <legend>Коментарий</legend>
-          <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="data-list__checkbox">
-          <legend>Дополнительно</legend>
-          <label for="sweetener"><input type="checkbox" id="sweetener">Сахорозаменитель</label>
-          <label for="water"><input type="checkbox" id="water">Питевая вода</label>
-          <label for="milk"><input type="checkbox" id="milk">Молоко</label>
-          <label for="vitamins"><input type="checkbox" id="vitamins">Витамины</label>
-        </fieldset>
-      </form>
+      <div class="container">
+        <form class="data-list">
+          <fieldset class="data-list__info">
+            <label class="data-list__data name" for="name">Имя:*<input type="text" id="name"
+                placeholder="Барсик"></label>
+            <label class="data-list__data" for="weight">Вес (кг):*<input type="text" id="weight"
+                placeholder="7"></label>
+            <label class="data-list__age" for="age">Возраст(лет):<input type="text" id="age" placeholder="7"></label>
+          </fieldset>
+          <fieldset class="data-list__radio">
+            <input type="radio" id="losing"><label for="losing">Похудение</label>
+            <input type="radio" id="gain"><label for="gain">Набор массы</label>
+            <input type="radio" id="no-savvy"><label for="no-savvy">Не знаю (нужен ваш совет)</label>
+          </fieldset>
+          <fieldset class="data-list__mail">
+            <p>Контактные данные (владельца кота)</p>
+            <label class="data-list__data" for="email">Е-mail:*<input type="text" id="email"
+                placeholder="kuklachev@gmail.com"></label>
+            <label class="data-list__data" for="tel">Телефон:*<input type="text" id="tel"
+                placeholder="8 (960) 900-60-90"></label>
+          </fieldset>
+          <fieldset class="data-list__field">
+            <p>Коментарий</p>
+            <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="data-list__checkbox">
+            <p>Дополнительно</p>
+            <label for="sweetener"><input type="checkbox" id="sweetener">Сахорозаменитель</label>
+            <label for="water"><input type="checkbox" id="water">Питевая вода</label>
+            <label for="milk"><input type="checkbox" id="milk">Молоко</label>
+            <label for="vitamins"><input type="checkbox" id="vitamins">Витамины</label>
+          </fieldset>
+        </form>
+      </div>
     </section>
   </main>
   <footer>
-    <a><img src="#" height="" width="" alt="footer-logo"></a>
+    <a><img src="/img/logo-footer.svg" height="24" width="130" alt="footer-logo"></a>
     <ul class="social">
       <li class="social__item social__item--vk">
         <a href="#" class="" aria-label="Вконтакте"></a>

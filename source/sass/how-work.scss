@@ -16,46 +16,38 @@
   margin-bottom: 20px;
   list-style-type: none;
   margin-left: 20px;
-}
-/*
-.how-work__item li::before {
-  @include even(1) {
-    position: absolute;
-    background-image: url("/img/advantage-leaf@1x.png") no-repeat #68b738;
-    background-size: 60px 60px;
+  padding-left: 0;
+
+  span {
+    background-color: #68b738;
+    margin-right: 20px;
   }
 
-  @include even(2) {
-    position: absolute;
-    background-image: url("/img/advantage-leaf@1x.png") no-repeat #68b738;
-    background-size: 60px 60px;
-  }
-
-  @include even(3) {
-    position: absolute;
-    background-image: url("/img/advantage-leaf@1x.png") no-repeat #68b738;
-    background-size: 60px 60px;
-  }
-
-  @include even(4) {
-    position: absolute;
-    background-image: url("/img/advantage-leaf@1x.png") no-repeat #68b738;
-    background-size: 60px 60px;
+  li {
+    display: flex;
+    margin-bottom: 20px;
   }
 }
-*/
 
 @media (min-width: $tablet-width) {
   .how-work__item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+    z-index: 2;
 
-  .how-work__item li {
-    width: 202px;
-    height: 230px;
-    margin-right: 150px;
+    li {
+      flex-direction: column;
+      width: 202px;
+      height: 230px;
+      margin-right: 150px;
+    }
+
+    span {
+      height: 80px;
+      width: 80px;
+      margin-bottom: 37px;
+    }
   }
 }
 

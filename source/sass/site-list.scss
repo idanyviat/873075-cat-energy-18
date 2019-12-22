@@ -35,6 +35,10 @@
   }
 }
 
+.site-list--out {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;

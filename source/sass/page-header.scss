@@ -8,6 +8,9 @@
 
 .page-header__logo {
   min-height: 42px;
+  position: absolute;
+  top: 0;
+  margin-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,7 +20,6 @@
   }
 
   .page-header__logo {
-    order: 0;
     min-height: 65px;
   }
 }

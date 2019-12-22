@@ -1,6 +1,6 @@
 $tablet-width: 768px;
 $desktop-width: 1440px;
-$mobile-width-only: 767px;
+$mobile-width-only: 320px;
 
 body {
   background: #ffffff;
@@ -39,6 +39,9 @@ html {
 @import "container.scss";
 @import "form-head.scss";
 @import "data-list.scss";
+@import "life-exp.scss";
+@import "adress.scss";
+@import "footer.scss";
 
 @font-face {
   font-family: "Oswald";
