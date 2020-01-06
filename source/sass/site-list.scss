@@ -1,0 +1,57 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  /* Временно для сетки */
+  min-height: 198px;
+}
+
+.site-list__item {
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+  min-width: 320px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: #707070;
+  }
+
+  &:active {
+    padding-bottom: 8px;
+    border-bottom: 2px solid green;
+  }
+}
+
+.site-list--out {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: none;
+    width: 570px;
+
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+
+  .site-list__item {
+    min-width: 100px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,111 @@
+.main-nav {
+  margin: 0 auto;
+  min-width: 320px;
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.main-nav__toggle {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 250px;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+
+  background-color: white;
+
+  cursor: pointer;
+  border: none;
+
+  & :hover,
+  & :active {
+    background-color: white;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 36px;
+  height: 2px;
+
+  background-color: black;
+  box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+}
+
+.main-nav__toggle:active::before .main-nav--closed {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 250px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    min-width: 570px;
+    margin-right: 0;
+    /* Временно для сетки */
+    height: 70px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

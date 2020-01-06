@@ -1,6 +1,59 @@
+$mobile-width-only: 320px;
+$tablet-width: 768px;
+$desktop-width: 1300px;
+
+
 body {
-  background: red;
-  margin: 0 auto;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
-  /*для пуллреквеста на время*/
+  font-weight: 400;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import "page-header.scss";
+@import "page-main.scss";
+@import "main-nav.scss";
+@import "main-card.scss";
+@import "how-work.scss";
+@import "full-product.scss";
+@import "card.scss";
+@import "catalog";
+@import "catalog-card";
+@import "visability-hidden.scss";
+@import "site-list.scss";
+@import "social.scss";
+@import "section-product.scss";
+@import "mixins.scss";
+@import "container.scss";
+@import "form-head.scss";
+@import "data-list.scss";
+@import "life-exp.scss";
+@import "adress.scss";
+@import "footer.scss";
+
+@font-face {
+  font-family: "Oswald";
+  src: url("oswaldmedium.woff2") format("woff2") url("oswaldmedium.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("oswaldregular.woff2") format("woff2") url("oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }

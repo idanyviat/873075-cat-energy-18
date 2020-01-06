@@ -1,0 +1,18 @@
+.adress {
+  display: flex;
+  margin-top: 68px;
+
+  & p {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 140px;
+  }
+
+  & p:last-of-type {
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+  }
+}
