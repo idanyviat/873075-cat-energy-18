@@ -10,11 +10,10 @@
 .main-card__item {
   display: flex;
   flex-direction: column;
-  padding-right: 20px;
-  padding-left: 20px;
   background: url("/img/index-background-mobile@1x.jpg") no-repeat;
-  background-size: 320px 320px;
+  background-size: 320px 306px;
   color: white;
+  margin-bottom: 25px;
 }
 
 .main-card__item h2 {
@@ -68,6 +67,7 @@
   .main-card__item h2 {
     font-size: 60px;
     line-height: 60px;
+    margin-left: 60px;
     color: black;
     text-align: start;
     z-index: 1;
@@ -76,6 +76,7 @@
   .main-card__item p {
     font-size: 20px;
     line-height: 20px;
+    margin-left: 60px;
     color: black;
     text-align: start;
     z-index: 2;
@@ -94,7 +95,7 @@
     padding-top: 17px;
     padding-bottom: 17px;
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 89px;
     margin-bottom: 23px;
     width: 245px;
     z-index: 2;
