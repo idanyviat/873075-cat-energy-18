@@ -1,11 +1,9 @@
 .full-product {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 208px;
+  display: block;
   width: 280px;
-  margin-left: 20px;
+  min-height: 431px;
+  margin-top: 23px;
+  margin-right: 60px;
 }
 
 .full-product__ollproduct {
@@ -39,5 +37,11 @@
 @media (min-width: $tablet-width) {
   .full-product {
     border: 1px solid #e6e6e6;
+  }
+
+  .full-product__button {
+    height: 40px;
+    width: 249px;
+    margin-left: 13px;
   }
 }

@@ -2,26 +2,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 20px;
-  margin-right: 20px;
 
   p {
     font-size: 24px;
     line-height: 24px;
     font-weight: bold;
-  }
-
-  p::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    box-sizing: border-box;
-    width: 100%;
-    height: 3px;
-    background: #68b738;
-    border: solid #ffffff;
-    border-width: 0 10px;
-    margin-left: -100%;
   }
 
   p::after {
@@ -92,7 +77,6 @@
   border-bottom: 1px solid #ededed;
   border-left: none;
   border-right: none;
-  margin-bottom: 33px;
 
   input[type="radio"] {
     position: absolute;
@@ -163,10 +147,8 @@
 }
 
 textarea {
-  min-width: 280px;
+  min-width: 260px;
   height: 150px;
-  margin-left: 10px;
-  margin-right: 10px;
   text-transform: uppercase;
 }
 
@@ -175,4 +157,21 @@ textarea {
   flex-direction: column;
   min-width: 320px;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .data-list {
+    p::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      width: 100%;
+      height: 3px;
+      background: #68b738;
+      border: solid #ffffff;
+      border-width: 0 10px;
+      margin-left: -100%;
+    }
+  }
 }

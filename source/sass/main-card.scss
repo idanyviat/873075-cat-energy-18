@@ -41,8 +41,6 @@
   padding-right: 66px;
   padding-top: 14px;
   padding-bottom: 14px;
-  margin-right: 20px;
-  margin-left: 20px;
   margin-bottom: 23px;
 
   background-color: #68b738;
@@ -72,7 +70,7 @@
     line-height: 60px;
     color: black;
     text-align: start;
-    z-index: 2;
+    z-index: 1;
   }
 
   .main-card__item p {
@@ -109,24 +107,37 @@
     flex-direction: row;
     flex-wrap: nowrap;
     min-width: 1300px;
-    min-height: 850px;
-
-    &::before {
-      content: url ("../img/index-background-desktop@1x.jpg");
-      position: absolute;
-    }
+    min-height: 707px;
   }
 
   .main-card__item {
-    min-width: 610px;
+    width: 610px;
     margin-bottom: 0;
     padding-top: 29px;
     padding-bottom: 50px;
     padding-right: 20px;
     padding-left: 20px;
+
+    ::after {
+      content: "";
+      position: absolute;
+      background: url("/img/index-background-desktop@1x.jpg") no-repeat;
+      z-index: 0;
+      opacity: 0.9;
+      top: 0;
+      height: 700px;
+      width: 700px;
+      right: 1px;
+    }
   }
 
   .main-card__product {
-    background-color: #589234;
+    left: 560px;
+    z-index: 2;
+  }
+
+  .main-card__btn {
+    position: absolute;
+    top: 336px;
   }
 }

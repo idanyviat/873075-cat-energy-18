@@ -53,6 +53,16 @@
   .site-list__item {
     min-width: 100px;
     margin-right: 20px;
+    z-index: 2;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list {
+    margin-right: 40px;
+  }
+
+  .site-list__item a {
+    color: white;
+  }
+}

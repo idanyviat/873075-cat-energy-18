@@ -1,5 +1,6 @@
 .adress {
   display: flex;
+  background-color: white;
 
   & p {
     font-size: 16px;
@@ -14,5 +15,12 @@
     font-size: 14px;
     text-transform: none;
     font-weight: normal;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .adress {
+    position: absolute;
+    z-index: 3;
   }
 }
