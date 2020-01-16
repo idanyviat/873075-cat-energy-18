@@ -1,4 +1,9 @@
 .catalog-last {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-last__info {
   :nth-child(3) {
     p:nth-child(3) {
       margin-left: 194px;

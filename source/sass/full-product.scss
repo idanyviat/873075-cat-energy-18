@@ -1,7 +1,7 @@
 .full-product {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   width: 280px;
-  min-height: 431px;
   margin-top: 23px;
   margin-right: 60px;
 }
@@ -36,6 +36,8 @@
 
 @media (min-width: $tablet-width) {
   .full-product {
+    display: block;
+    min-height: 431px;
     border: 1px solid #e6e6e6;
   }
 

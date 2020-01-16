@@ -1,16 +1,4 @@
 .map {
-  min-width: 320px;
+  min-width: 100%;
   border: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .map {
-    min-width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .map {
-    min-width: 1300px;
-  }
 }

@@ -96,13 +96,12 @@
     height: 40px;
     width: 249px;
     margin-left: 13px;
+    margin-top: 76px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-card__spec {
-    display: block;
-    position: relative;
     left: 165px;
     top: -70px;
   }
