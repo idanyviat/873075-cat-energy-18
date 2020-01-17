@@ -51,24 +51,24 @@
           </fieldset>
           <fieldset class="data-list__mail">
             <p>Контактные данные (владельца кота)</p>
-            <label class="data-list__data" for="email">Е-mail:*<input type="text" id="email"
+            <label class="data-list__data data-list__data--mail" for="email">Е-mail:*<input type="text" id="email"
                 placeholder="kuklachev@gmail.com"></label>
-            <label class="data-list__data" for="tel">Телефон:*<input type="text" id="tel"
+            <label class="data-list__data data-list__data--phone" for="tel">Телефон:*<input type="text" id="tel"
                 placeholder="8 (960) 900-60-90"></label>
           </fieldset>
           <fieldset class="data-list__field">
             <p>Коментарий</p>
             <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="data-list__checkbox">
+          <div class="data-list__checkbox">
             <p>Дополнительно</p>
-            <label for="sweetener"><input type="checkbox" id="sweetener">Сахорозаменитель</label>
-            <label for="water"><input type="checkbox" id="water">Питевая вода</label>
-            <label for="milk"><input type="checkbox" id="milk">Молоко</label>
-            <label for="vitamins"><input type="checkbox" id="vitamins">Витамины</label>
-            <a class="data-list__chekbox--bt" href="#">Отправить заявку</a>
-            <span class="data-list__important">*—Обязательные поля</span>
-          </fieldset>
+            <input type="checkbox" id="sweetener"><label for="sweetener">Сахорозаменитель</label>
+            <input type="checkbox" id="water"><label for="water">Питевая вода</label>
+            <input type="checkbox" id="milk"><label for="milk">Молоко</label>
+            <input type="checkbox" id="vitamins"><label for="vitamins">Витамины</label>
+            <a class="data-list__checkbox--bt" href="#">Отправить заявку</a>
+            <span class="data-list__checkbox--important">*—Обязательные поля</span>
+          </div>
         </form>
       </div>
     </section>
