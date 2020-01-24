@@ -559,6 +559,14 @@ textarea {
       margin-top: 30px;
       font-size: 33px;
     }
+
+    p::after {
+      top: 715px;
+    }
+  }
+
+  .data-list__field p::after {
+    top: 944px;
   }
 
   .data-list__info {
@@ -634,7 +642,7 @@ textarea {
 
   .data-list__mail {
     :nth-child(3) {
-      margin-left: 72px;
+      margin-left: 23px;
     }
   }
 
@@ -642,6 +650,14 @@ textarea {
     height: 350px;
     width: 1300px;
     margin-bottom: 2px;
+
+    p {
+      margin-right: 627px;
+    }
+
+    p::after {
+      top: 1297px;
+    }
 
     label {
       flex-basis: 215px;
@@ -651,6 +667,10 @@ textarea {
     label::before {
       top: 2px;
       left: -39px;
+    }
+
+    :nth-child(9) {
+      margin-left: 54px;
     }
 
     .data-list__checkbox--bt {
