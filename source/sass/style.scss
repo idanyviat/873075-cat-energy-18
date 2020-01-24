@@ -1,7 +1,7 @@
 $mobile-width-only: 320px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
-
+$retina-dppx: 1.5dppx;
 
 body {
   background: #ffffff;
@@ -28,6 +28,7 @@ html {
 @import "main-nav.scss";
 @import "main-card.scss";
 @import "how-work.scss";
+@import "html-academy.scss";
 @import "full-product.scss";
 @import "card.scss";
 @import "catalog";
@@ -36,7 +37,6 @@ html {
 @import "site-list.scss";
 @import "social.scss";
 @import "section-product.scss";
-@import "mixins.scss";
 @import "container.scss";
 @import "form-head.scss";
 @import "data-list.scss";
@@ -48,14 +48,14 @@ html {
 
 @font-face {
   font-family: "Oswald";
-  src: url("oswaldmedium.woff2") format("woff2") url("oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("oswaldregular.woff2") format("woff2") url("oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }

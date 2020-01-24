@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
+  width: 280px;
   /* Временно для сетки */
   min-height: 198px;
 }
@@ -17,7 +17,7 @@
 
   padding-top: 25px;
   padding-bottom: 25px;
-  min-width: 320px;
+  width: 280px;
   border-top: 1px solid #e6e6e6;
 }
 
@@ -45,24 +45,28 @@
     justify-content: flex-end;
     align-items: none;
     width: 570px;
-
-    /* Временно для сетки */
+    padding-top: 20px;
     min-height: 70px;
   }
 
   .site-list__item {
+    width: 150px;
     min-width: 100px;
-    margin-right: 20px;
     z-index: 2;
+    border-top: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     margin-right: 40px;
+    padding-top: 51px;
   }
 
-  .site-list__item a {
-    color: white;
+  .site-list__item {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 20px;
   }
 }

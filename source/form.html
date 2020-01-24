@@ -9,8 +9,14 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo"><img src="img/logo-mobile.svg" href="#" width="200" height="50" alt="logo"></a>
+  <header class="page-header container">
+    <a class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" href="#" alt="logo">
+      </picture>
+    </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visability-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
@@ -57,17 +63,17 @@
                 placeholder="8 (960) 900-60-90"></label>
           </fieldset>
           <fieldset class="data-list__field">
-            <p>Коментарий</p>
+            <p>Комментарий</p>
             <textarea placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <div class="data-list__checkbox">
             <p>Дополнительно</p>
-            <input type="checkbox" id="sweetener"><label for="sweetener">Сахорозаменитель</label>
-            <input type="checkbox" id="water"><label for="water">Питевая вода</label>
+            <input type="checkbox" id="sweetener"><label for="sweetener">Сахарозаменитель</label>
+            <input type="checkbox" id="water"><label for="water">Питьевая вода</label>
             <input type="checkbox" id="milk"><label for="milk">Молоко</label>
             <input type="checkbox" id="vitamins"><label for="vitamins">Витамины</label>
-            <a class="data-list__checkbox--bt" href="#">Отправить заявку</a>
-            <span class="data-list__checkbox--important">*—Обязательные поля</span>
+            <a class="data-list__checkbox data-list__checkbox--bt" href="#">Отправить заявку</a>
+            <span class="data-list__checkbox data-list__checkbox--important">* —Обязательные поля</span>
           </div>
         </form>
       </div>
@@ -92,8 +98,10 @@
       <li class="social__item social__item--instagram"><a href="#" class="" aria-label="Инстаграм"></a></li>
       <li class="social__item social__item--fb"><a href="#" class="" aria-label="Фейсбук"></a></li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/adaptive">HTML-Academy<img class="html-academy html-academy__logo"
-        src="/img/htmlacademy.svg" height="27" width="35" alt="HTML Academy"></a>
+    <a class="html-academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <p>HTML-Academy</p><img class="html-academy__logo" src="/img/htmlacademy.svg" height="42" width="50"
+        alt="HTML Academy">
+    </a>
   </footer>
   <script src="/js/main-nav.js"></script>
 </body>

@@ -10,7 +10,13 @@
 
 <body>
   <header class="page-header container">
-    <a class="page-header__logo"><img src="img/logo-mobile.svg" href="#" width="200" height="50" alt="logo"></a>
+    <a class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" href="#" alt="logo">
+      </picture>
+    </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visability-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
@@ -33,8 +39,11 @@
         <div class="main-card__item">
           <h2>Функциональное питание для котов</h2>
           <p>Занялся собой? Займись котом!</p>
-          <img class="main-card__product" src="img/index-can-mobile@1x.png" height="269" width="269"
-            alt="Пример товара">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+            <img class="main-card__product" src="img/index-can-mobile@1x.png" alt="Пример товара">
+          </picture>
         </div>
         <a href="#" class="main-card__btn">Подобрать программу</a>
       </div>
@@ -44,14 +53,14 @@
       <div class="card">
         <img class="card__image" src="img/icon-cat-slim.svg" height="52" width="52" alt="Логотип SLIM">
         <h3 class="card__name">Похудение</h3>
-        <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
-          поможет вашему питомцу сбросить лишний вес.</p>
+        <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
+          Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="card__catalog" href="#">Каталог Slim</a>
       </div>
       <div class="card">
-        <img class="card__image" src="img/icon-cat-pro.svg" height="52" width="52" alt="Логотип PRO">
-        <h3 class="card__name">Набор массы</h3>
-        <p>Заработать авторитет среди дворовых котов и даже собак?<br>
+        <img class="card__image card__image--last" src="img/icon-cat-pro.svg" height="52" width="52" alt="Логотип PRO">
+        <h3 class="card__name card__name--last">Набор массы</h3>
+        <p class="card__info">Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="card__catalog" href="#">Каталог Pro</a>
       </div>
@@ -73,22 +82,28 @@
       <div class="container">
         <div class="life-exp">
           <h3 class="life-exp__name">Живой пример</h3>
-          <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный
+            результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов в день.
+          </p>
           <div class="life-exp__form">
-            <div class="life-exp__form--weight">
-              <p>cнижение веса</p>
-              <p>5 кг</p>
+            <div>
+              <p class="life-exp__form life-exp__form--dowmweight">cнижение веса</p>
+              <p class="life-exp__form life-exp__form--weight">5 кг</p>
             </div>
-            <div class="life-exp__form--time">
-              <p>затрачено времени</p>
-              <p>60 дней</p>
+            <div>
+              <p class="life-exp__form life-exp__form--downtime">затрачено времени</p>
+              <p class="life-exp__form life-exp__form--time">60 дней</p>
             </div>
           </div>
           <p class="life-exp__price">Затраты на питание: <span>15000 руб.</span></p>
         </div>
         <div class="life-exp life-exp__image">
-          <img src="/img/before-mobile@1x.png" width="280" height="240" alt="">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="/img/before-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="/img/before-tablet@1x.png">
+            <img src="/img/before-mobile@1x.png" alt="">
+          </picture>
           <div>
             <label class="life-exp__toggle" for="before-cat">Было<input type="radio" id="before-cat"
                 name="before-cat">Стало</label>
@@ -99,7 +114,7 @@
     <section>
       <div class="container">
         <div class="adress">
-          <p>Приглашаем к сотрудничеству дилеров!</p>
+          <p>Приглашаем<br> к сотрудничеству дилеров!</p>
           <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>
@@ -116,8 +131,10 @@
       <li class="social__item social__item--instagram"><a href="#" class="" aria-label="Инстаграм"></a></li>
       <li class="social__item social__item--fb"><a href="#" class="" aria-label="Фейсбук"></a></li>
     </ul>
-    <a href="https://htmlacademy.ru/intensive/adaptive">HTML-Academy<img class="html-academy html-academy__logo"
-        src="/img/htmlacademy.svg" height="27" width="35" alt="HTML Academy"></a>
+    <a class="html-academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <p>HTML-Academy</p><img class="html-academy__logo" src="/img/htmlacademy.svg" height="42" width="50"
+        alt="HTML Academy">
+    </a>
   </footer>
   <script src="/js/main-nav.js"></script>
 </body>

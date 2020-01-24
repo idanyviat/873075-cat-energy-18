@@ -4,23 +4,56 @@
   width: 280px;
   margin-top: 23px;
   margin-right: 60px;
+  margin-bottom: 33px;
+}
+
+.full-product__item {
+  background: url("/img/icon-plus-mobile.svg") no-repeat;
+  background-size: 31px 31px;
+  background-position-x: 125px;
+  background-position-y: 25px;
+
+  @media (min-width: $tablet-width) {
+    background: url("/img/icon-plus.svg") no-repeat;
+    background-size: 58px 57px;
+    background-position-x: 134px;
+    background-position-y: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position-x: 93px;
+    background-position-y: 58px;
+  }
 }
 
 .full-product__ollproduct {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-top: 81px;
+  margin-left: 38px;
+  margin-bottom: 0;
 }
 
 .full-product__full {
+  width: 238px;
+  height: 27px;
+  margin-left: 21px;
+  margin-top: 7px;
+  font-family: ("Arial");
   font-size: 12px;
-  line-height: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
   color: #444444;
 }
 
 .full-product__button {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 14px;
   color: #444444;
   text-transform: uppercase;
   display: inline-block;
@@ -37,13 +70,62 @@
 @media (min-width: $tablet-width) {
   .full-product {
     display: block;
-    min-height: 431px;
+    min-height: 432px;
     border: 1px solid #e6e6e6;
+    margin-right: 0;
+    margin-top: 144px;
+    width: 325px;
+  }
+
+  .full-product__full {
+    width: 215px;
+    height: 35px;
+    margin-left: 54px;
+    margin-top: 63px;
+    font-size: 16px;
+  }
+
+  .full-product__ollproduct {
+    width: 137px;
+    height: 38px;
+    font-family: ("Oswald");
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    margin-left: 95px;
+    margin-top: 0;
+    padding-top: 164px;
   }
 
   .full-product__button {
     height: 40px;
     width: 249px;
+    margin-left: 39px;
+    margin-top: 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .full-product {
+    width: 246px;
+    margin-left: 2px;
+    min-height: 435px;
+  }
+
+  .full-product__ollproduct {
+    margin-left: 54px;
+  }
+
+  .full-product__full {
     margin-left: 13px;
+    margin-top: 66px;
+  }
+
+  .full-product__button {
+    width: 167px;
   }
 }

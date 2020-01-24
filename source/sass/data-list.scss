@@ -4,22 +4,9 @@
   flex-wrap: wrap;
 
   p {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 26px;
     font-weight: bold;
-  }
-
-  p::after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    box-sizing: border-box;
-    width: 100%;
-    height: 3px;
-    background: #68b738;
-    border: solid #ffffff;
-    border-width: 0 10px;
-    margin-right: -100%;
   }
 }
 
@@ -27,7 +14,12 @@
   display: flex;
   flex-direction: column;
   border: none;
-  height: 250px;
+  height: 214px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 14px;
 
   label {
     padding-top: 17px;
@@ -41,38 +33,50 @@
 
   input {
     height: 45px;
-    width: 160px;
-    margin-bottom: 14px;
-    margin-left: 16px;
+    width: 204px;
+    margin-bottom: -4px;
+    margin-left: 15px;
   }
 }
 
 .data-list__data--mail input {
+  font-size: 16px;
   height: 45px;
-  width: 188px;
+  width: 214px;
   margin-bottom: 14px;
+  margin-top: 12px;
   margin-left: 16px;
+  padding-left: 10px;
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-size: 13px;
-  background-position-x: 160px;
-  background-position-y: 16px;
+  background-size: 17px;
+  background-position-x: 178px;
+  background-position-y: 13px;
 }
 
 .data-list__data--phone input {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
   height: 45px;
   margin-bottom: 14px;
-  margin-left: 16px;
+  margin-left: 10px;
+  padding-left: 11px;
   background-size: 13px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-  width: 164px;
-  background-position-x: 137px;
+  width: 203px;
+  background-position-x: 178px;
   background-position-y: 16px;
 }
 
 .name input {
-  width: 190px;
+  width: 226px;
 }
 
 .data-list__age {
@@ -81,7 +85,7 @@
   text-transform: uppercase;
 
   input {
-    width: 125px;
+    width: 182px;
     height: 45px;
     margin-bottom: 14px;
     margin-left: 8px;
@@ -91,7 +95,7 @@
 .data-list__radio {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+  min-width: 270px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -114,13 +118,13 @@
     cursor: pointer;
     position: relative;
     padding-left: 37px;
-    margin-bottom: 29px;
-    margin-top: 20px;
+    margin-bottom: 16px;
+    margin-top: 14px;
   }
 
   input + label {
     position: relative;
-    padding: 8px 0 0 50px;
+    padding: 8px 0 0 45px;
     cursor: pointer;
   }
 
@@ -128,7 +132,7 @@
     content: "";
     position: absolute;
     top: 1px;
-    left: 10px;
+    left: -1px;
     width: 30px;
     height: 30px;
     border: 1px solid #cdd1da;
@@ -139,10 +143,10 @@
   input + label::after {
     content: "";
     position: absolute;
-    top: 8px;
-    left: 17px;
-    width: 16px;
-    height: 16px;
+    top: 9px;
+    left: 6px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: #68b738;
     opacity: 0;
@@ -160,35 +164,99 @@
 
 .data-list__mail {
   border: none;
-  min-width: 320px;
+  min-width: 270px;
   flex-basis: 100%;
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-bottom: -23px;
+
+  p::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 99px;
+    height: 3px;
+    top: -27px;
+    left: 41px;
+    background: #68b738;
+    border: solid #ffffff;
+    border-width: 0 10px;
+    margin-right: -100%;
+  }
 }
 
 .data-list__field {
   border: none;
-  min-width: 320px;
+  min-width: 270px;
   flex-basis: 100%;
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+
+  p::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 158px;
+    height: 3px;
+    top: -2px;
+    left: 41px;
+    background: #68b738;
+    border: solid #ffffff;
+    border-width: 0 10px;
+    margin-right: -100%;
+  }
 }
 
 textarea {
-  min-width: 260px;
+  min-width: 277px;
   height: 150px;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-bottom: -7px;
   text-transform: uppercase;
 }
 
 .data-list__checkbox {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
+  min-width: 270px;
+  margin-bottom: -26px;
   border: none;
+
+  p::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 136px;
+    height: 3px;
+    top: -2px;
+    left: 41px;
+    background: #68b738;
+    border: solid #ffffff;
+    border-width: 0 10px;
+    margin-right: -100%;
+  }
 
   input {
     display: none;
   }
 
   label {
-    margin-left: 50px;
-    line-height: 35px;
+    font-size: 16px;
+    padding-left: 8px;
+    margin-left: 39px;
+    margin-top: 0;
+    line-height: 44px;
     height: 45px;
     position: relative;
     text-transform: uppercase;
@@ -200,7 +268,7 @@ textarea {
     height: 30px;
     width: 30px;
     border: 1px solid;
-    top: 3px;
+    top: 8px;
     left: -40px;
     position: absolute;
   }
@@ -214,7 +282,7 @@ textarea {
     border-bottom: 2px solid;
     transform: rotate(-45deg);
     left: -36px;
-    top: 9px;
+    top: 15px;
     position: absolute;
     color: #68b738;
   }
@@ -230,8 +298,12 @@ textarea {
 
 .data-list__checkbox--bt {
   display: inline-block;
+  width: 279px;
+  font-size: 16px;
+  line-height: 19px;
   padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 8px;
+  margin-top: 22px;
   color: white;
   text-align: center;
   background-color: #68b738;
@@ -241,30 +313,140 @@ textarea {
 }
 
 .data-list__checkbox--important {
-  margin-top: 25px;
+  margin-top: 48px;
+  margin-left: 4px;
+  margin-bottom: -1px;
+  width: 69px;
+  height: 12px;
   font-size: 14px;
-  line-height: 16px;
+  font-family: ("Arial");
   font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: normal;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .data-list {
     p {
-      flex-basis: 100%;
+      flex-basis: none;
+      margin-left: 36px;
+      font-size: 34px;
+      width: 561px;
+      background-color: white;
     }
 
-    p::before {
+    p::after {
       content: "";
+      position: absolute;
       display: inline-block;
       vertical-align: middle;
       box-sizing: border-box;
       width: 100%;
       height: 3px;
+      top: 940px;
+      left: 0;
       background: #68b738;
       border: solid #ffffff;
       border-width: 0 10px;
-      margin-left: -100%;
+      z-index: -1;
     }
+  }
+
+  .data-list__field {
+    p {
+      width: 224px;
+    }
+
+    p::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      width: 100%;
+      height: 3px;
+      top: 1243px;
+      left: 0;
+      background: #68b738;
+      border: solid #ffffff;
+      border-width: 0 10px;
+      z-index: -1;
+    }
+  }
+
+  .data-list__info {
+    width: 768px;
+
+    label {
+      padding-top: 18px;
+      margin-left: 40px;
+      margin-bottom: 4px;
+    }
+  }
+
+  .data-list__data {
+    font-size: 21px;
+    margin-left: 40px;
+
+    input {
+      width: 539px;
+      height: 52px;
+      margin-bottom: -2px;
+    }
+  }
+
+  .name {
+    input {
+      width: 566px;
+      margin-bottom: -2px;
+    }
+  }
+
+  label .data-list__age {
+    padding-top: 1px;
+  }
+
+  .data-list__age {
+    font-size: 21px;
+
+    input {
+      margin-left: 18px;
+      width: 497px;
+      height: 50px;
+    }
+  }
+
+  .data-list__radio {
+    margin-left: 44px;
+    margin-top: 84px;
+    margin-bottom: 40px;
+    width: 628px;
+    height: 197px;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
+  }
+
+  .data-list__radio input + label {
+    padding-left: 83px;
+    padding-top: 18px;
+    font-size: 20px;
+  }
+
+  .data-list__radio input + label::before {
+    width: 40px;
+    height: 40px;
+    left: 25px;
+    top: 5px;
+  }
+
+  .data-list__radio input + label::after {
+    top: 17px;
+    left: 36px;
+    width: 17px;
+    height: 17px;
   }
 
   .data-list__checkbox {
@@ -273,80 +455,218 @@ textarea {
     justify-content: start;
     width: 768px;
 
+    p {
+      width: 257px;
+      margin-right: 101px;
+    }
+
+    p::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      width: 100%;
+      height: 3px;
+      top: 1594px;
+      left: 0;
+      background: #68b738;
+      border: solid #ffffff;
+      border-width: 0 10px;
+      z-index: -1;
+    }
+
     label {
-      flex-basis: 283px;
+      flex-basis: 263px;
+      font-size: 20px;
+      padding-left: 18px;
+      margin-left: 81px;
+      margin-top: 26px;
+    }
+
+    label::before {
+      height: 39px;
+      width: 38px;
+      top: 3px;
+      left: -40px;
+    }
+
+    label::after {
+      left: -33px;
+      top: 12px;
     }
   }
 
   .data-list__checkbox--bt {
     width: 283px;
-    margin-right: 60px;
+    margin-right: 3px;
+    margin-top: 52px;
+    margin-left: 40px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 72px;
   }
 
-  .data-list__data--mail input {
-    width: 552px;
+  .data-list__checkbox--important {
+    width: 77px;
+    font-size: 16px;
+    margin-top: 67px;
+    margin-left: 62px;
   }
 
-  .data-list__data--phone input {
-    width: 530px;
+  .data-list__mail {
+    margin-bottom: 27px;
+  }
+
+  textarea {
+    min-width: 631px;
+    height: 173px;
+    margin-top: 45px;
+    margin-left: 39px;
+    margin-bottom: 26px;
+  }
+
+  .data-list__data--mail {
+    input {
+      width: 552px;
+      margin-top: 47px;
+      height: 54px;
+      margin-left: 20px;
+      background-position-x: 508px;
+      background-position-y: 19px;
+    }
+  }
+
+  .data-list__data--phone {
+    input {
+      width: 536px;
+      margin-top: 19px;
+      margin-left: 11px;
+      background-size: 21px;
+      background-position-x: 495px;
+      background-position-y: 18px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .data-list {
+    min-width: 1246px;
+
+    p {
+      margin-left: 72px;
+      margin-top: 30px;
+      font-size: 33px;
+    }
+  }
+
   .data-list__info {
-    width: 570px;
+    width: 611px;
     font-weight: 700;
+    margin-left: 29px;
   }
 
   .data-list__radio {
     width: 570px;
     height: 196px;
-    margin-left: 80px;
-    margin-top: 17px;
+    margin-left: 33px;
+    margin-top: 31px;
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
+
+    input + label {
+      padding-left: 85px;
+      padding-top: 17px;
+    }
+
+    input + label::after {
+      top: 16px;
+      left: 38px;
+    }
   }
 
   .data-list__data {
     input {
-      width: 450px;
+      width: 475px;
     }
 
+    font-size: 20px;
+    margin-left: 69px;
     font-weight: 700;
   }
 
+  .data-list__data--mail {
+    input {
+      width: 485px;
+      background-position-x: 445px;
+      background-position-y: 18px;
+    }
+  }
+
+  .data-list__data--phone {
+    input {
+      background-position-x: 434px;
+      background-position-y: 13px;
+    }
+  }
+
   .name input {
-    width: 480px;
+    width: 505px;
+  }
+
+  textarea {
+    margin-left: 23px;
+    height: 175px;
+    margin-bottom: 32px;
+    min-width: 1220px;
   }
 
   .data-list__age {
+    font-size: 20px;
+    margin-top: 6px;
+
     input {
-      width: 417px;
+      width: 436px;
+      margin-left: 15px;
     }
   }
 
   .data-list__mail {
     :nth-child(3) {
-      margin-left: 80px;
+      margin-left: 72px;
     }
-  }
-
-  textarea {
-    min-width: 1220px;
   }
 
   .data-list__checkbox {
     height: 350px;
-    min-width: 1300px;
+    width: 1300px;
+    margin-bottom: 2px;
 
     label {
-      flex-basis: 274px;
+      flex-basis: 215px;
+      margin-left: 110px;
+    }
+
+    label::before {
+      top: 2px;
+      left: -39px;
     }
 
     .data-list__checkbox--bt {
-      flex-basis: 53%;
-      width: 570px;
+      flex-basis: 44%;
+      width: 568px;
       height: 50px;
+      margin-left: 69px;
+      margin-top: 59px;
+      margin-bottom: 99px;
+    }
+
+    .data-list__checkbox--important {
+      width: 100px;
+      height: 100px;
+      margin-top: 74px;
+      margin-left: 81px;
     }
   }
 }
