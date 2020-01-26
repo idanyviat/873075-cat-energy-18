@@ -22,8 +22,8 @@
 
 @media (min-width: $tablet-width) {
   .adress {
-    height: 201px;
-    margin-top: 0;
+    height: 177px;
+    margin-top: -49px;
 
     p {
       font-size: 19px;
@@ -48,7 +48,7 @@
   .adress {
     position: absolute;
     z-index: 3;
-    margin-top: 96px;
+    margin-top: 101px;
     width: 569px;
 
     p {

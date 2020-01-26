@@ -9,8 +9,8 @@
 
 .page-header__logo {
   min-height: 42px;
-  position: absolute;
   top: 5px;
+  padding-top: 13px;
   height: 46px;
   width: 194px;
 }
@@ -27,15 +27,18 @@
     left: 22px;
     width: 184px;
     height: 70px;
+    padding-top: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    top: 53px;
+    top: -2px;
     margin-left: 0;
-    min-height: 68px;
+    min-height: 65px;
     width: 200px;
-    left: 224px;
+    left: 113px;
+    padding-top: 56px;
+    position: absolute;
   }
 }

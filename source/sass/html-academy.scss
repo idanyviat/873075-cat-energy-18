@@ -9,22 +9,22 @@
   }
 
   p {
-    margin-left: 21px;
+    margin-left: 2px;
     font-size: 15px;
     font-family: sans-serif;
   }
 }
 
 .html-academy__logo {
-  margin-left: 131px;
   margin-bottom: 0;
+  margin-left: 130px;
   margin-top: 5px;
 }
 
 @media (min-width: $tablet-width) {
   .html-academy {
     text-transform: none;
-    margin-top: 35px;
+    margin-top: 58px;
 
     p {
       margin-left: 49px;
@@ -32,19 +32,24 @@
   }
 
   .html-academy__logo {
-    margin-left: 16px;
+    margin-left: 14px;
+    margin-right: -30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .html-academy {
+    margin-top: 40px;
+
     p {
-      margin-left: 75px;
-      margin-top: 42px;
+      margin-left: 193px;
+      margin-top: 44px;
     }
   }
 
   .html-academy__logo {
     margin-top: 32px;
+    margin-left: 14px;
+    margin-right: -85px;
   }
 }
