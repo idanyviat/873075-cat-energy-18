@@ -185,6 +185,15 @@
     width: 1236px;
     padding-left: 0;
 
+    li span {
+      padding-left: 11px;
+      padding-right: 11px;
+      padding-top: 13px;
+      padding-bottom: 16px;
+      height: 79px;
+      width: 79px;
+    }
+
     li:nth-child(1) {
       ::after {
         z-index: -1;

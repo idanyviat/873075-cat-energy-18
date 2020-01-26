@@ -52,14 +52,19 @@
     width: 569px;
 
     p {
-      padding-top: 43px;
+      padding-top: 46px;
       margin-left: 77px;
     }
 
     p:last-of-type {
       margin-left: 32px;
-      padding-top: 45px;
+      padding-top: 46px;
       text-align: left;
+    }
+
+    span {
+      margin-top: 20px;
+      display: block;
     }
   }
 }
