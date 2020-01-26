@@ -31,9 +31,34 @@
   }
 }
 
+.card::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+  background: #68b738;
+  z-index: 1;
+  left: 34px;
+  top: 780px;
+}
+
+.card:last-of-type::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+  background: #68b738;
+  z-index: 1;
+  left: 34px;
+  top: 1068px;
+}
+
 .card__image {
   margin-left: 20px;
   margin-top: 22px;
+  z-index: 2;
 }
 
 .card__image--last {
@@ -115,6 +140,20 @@
     }
   }
 
+  .card::after {
+    left: 474px;
+    top: 1038px;
+    width: 204px;
+    height: 208px;
+  }
+
+  .card:last-of-type::after {
+    top: 1437px;
+    width: 207px;
+    height: 210px;
+    left: 475px;
+  }
+
   .card__image {
     margin-top: -300px;
     order: 2;
@@ -182,6 +221,20 @@
       width: 450px;
       padding-top: 41px;
     }
+  }
+
+  .card::after {
+    left: 272px;
+    top: 819px;
+    width: 104px;
+    height: 105px;
+  }
+
+  .card:last-of-type::after {
+    top: 821px;
+    width: 104px;
+    height: 102px;
+    left: 923px;
   }
 
   .card:last-of-type {
