@@ -14,6 +14,13 @@
   background-size: 320px 306px;
   color: white;
   padding-bottom: 13px;
+
+  @media (min-resolution: $retina-dppx) {
+    .main-card__item {
+      background: url("/img/index-background-mobile@2x.jpg") no-repeat;
+      background-size: 320px 306px;
+    }
+  }
 }
 
 .main-card__item h2 {
@@ -89,7 +96,7 @@
     margin-top: 42px;
     color: black;
     text-align: start;
-    z-index: 1;
+    z-index: 5;
     width: 420px;
   }
 
@@ -175,6 +182,12 @@
     left: 109px;
     background-position-x: -108px;
     background-color: #64a83b;
+
+    @media (min-resolution: $retina-dppx) {
+      .main-card .container::after {
+        background: url("/img/index-background-desktop@2x.jpg") no-repeat;
+      }
+    }
   }
 
   .main-card__product {
