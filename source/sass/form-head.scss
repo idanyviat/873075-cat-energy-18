@@ -1,0 +1,61 @@
+.form-head {
+  display: flex;
+}
+
+.form-head__list {
+  margin-left: 20px;
+}
+
+.form-head__list h2 {
+  font-size: 34px;
+  line-height: 38px;
+  margin-bottom: 33px;
+}
+
+.form-head__list p {
+  text-transform: uppercase;
+  width: 226px;
+  height: 33px;
+  font-family: ("Oswald");
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .form-head__list {
+    h2 {
+      font-size: 60px;
+      font-weight: normal;
+      margin-top: 82px;
+      margin-left: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 29px;
+      width: 377px;
+      height: 107px;
+      padding-top: 35px;
+      padding-left: 52px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-head__list {
+    h2 {
+      margin-left: 165px;
+      margin-top: 130px;
+    }
+
+    p {
+      width: 525px;
+      padding-left: 166px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 .main-nav {
   margin: 0 auto;
-  min-width: 320px;
+  width: 320px;
+  margin-bottom: -29px;
 }
 
 .main-nav__list {
@@ -8,21 +9,144 @@
   margin: 0;
 
   list-style: none;
-  /* Временно для сетки */
-  min-height: 50px;
+}
+
+.main-nav__toggle {
+  position: relative;
+  top: -39px;
+  right: 0;
+  left: 240px;
+  z-index: 2;
+  display: block;
+  width: 58px;
+  height: 50px;
+
+  background-color: white;
+
+  cursor: pointer;
+  border: none;
+
+  & :hover,
+  & :active {
+    background-color: white;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 23px;
+  height: 2px;
+
+  background-color: black;
+  box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+}
+
+.main-nav__toggle:active::before .main-nav--closed {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: auto;
+  left: 239px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 24px;
+    left: 18px;
+
+    width: 36px;
+    height: 2px;
+
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .site-list {
-    width: 570px;
-
+  .main-nav {
+    min-width: 570px;
+    margin-right: 0;
     /* Временно для сетки */
-    min-height: 70px;
+    height: 70px;
+    z-index: 3;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    :nth-child(1):not(a) {
+      margin-right: 15px;
+      width: 70px;
+      font-size: 17px;
+    }
+
+    :nth-child(2) {
+      margin-right: 34px;
+      font-size: 17px;
+      width: 154px;
+    }
+
+    :nth-child(3) {
+      font-size: 17px;
+      width: 155px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav {
-    width: 1440px;
+  .main-nav__list {
+    :nth-child(1):not(a) {
+      font-size: 20px;
+      margin-right: -5px;
+    }
+
+    :nth-child(2) {
+      font-size: 20px;
+      margin-right: 0;
+      width: 226px;
+    }
+
+    :nth-child(3) {
+      font-size: 20px;
+      width: 174px;
+    }
   }
 }

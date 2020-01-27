@@ -1,4 +1,55 @@
 .html-academy {
-  /*Заглушка*/
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    margin-left: 2px;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+}
+
+.html-academy__logo {
+  margin-bottom: 0;
+  margin-left: 130px;
+  margin-top: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .html-academy {
+    text-transform: none;
+    margin-top: 58px;
+
+    p {
+      margin-left: 49px;
+    }
+  }
+
+  .html-academy__logo {
+    margin-left: 14px;
+    margin-right: -30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .html-academy {
+    margin-top: 40px;
+
+    p {
+      margin-left: 193px;
+      margin-top: 44px;
+    }
+  }
+
+  .html-academy__logo {
+    margin-top: 32px;
+    margin-left: 14px;
+    margin-right: -85px;
+  }
 }

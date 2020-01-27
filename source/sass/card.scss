@@ -3,50 +3,111 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 280px;
-  min-height: 266px;
+  height: 266px;
   margin: 0 auto;
   margin-bottom: 20px;
   background-color: #f2f2f2;
-}
 
-.card h3 {
-  margin-left: 13px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 30px;
-}
-
-.card p {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
-  text-align: start;
-  margin-left: 20px;
-}
-
-.card__image {
-  margin-left: 20px;
-  margin-top: 22px;
+  p {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444444;
+    text-align: start;
+    margin-left: 21px;
+    padding-top: 5px;
+    width: 225px;
+  }
 }
 
 .card__name {
+  margin-left: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 }
 
+.card::after {
+  content: "";
+  position: relative;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #68b738;
+  z-index: 1;
+  left: 23px;
+  top: -238px;
+}
+
+.card .card__image--last::after {
+  content: "";
+  position: relative;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #68b738;
+  z-index: 1;
+  left: 23px;
+  top: -245px;
+}
+
+.card__image {
+  margin-left: 26px;
+  margin-top: 22px;
+  z-index: 2;
+  width: 38px;
+}
+
+.card__info {
+  margin-top: 25px;
+}
+
+.card .card__image--last {
+  margin-top: 36px;
+  width: 68px;
+  margin-left: 11px;
+}
+
+.card .card__name--last {
+  font-size: 23px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-left: 11px;
+  margin-bottom: 0;
+}
+
 .card__catalog {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 15px;
+  line-height: 13px;
   font-weight: 700;
   text-transform: uppercase;
   color: black;
   border-top: 1px solid #d9d9d9;
   padding-top: 21px;
+  padding-bottom: 21px;
   padding-right: 130px;
-  margin-left: 20px;
+  margin-left: 19px;
+  margin-top: 8px;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 10px;
+    margin-left: 14px;
+    margin-top: 2px;
+    background: url("../img/icon-right-arrow-long.svg") no-repeat;
+  }
+
+  :active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -54,34 +115,93 @@
     align-items: flex-end;
     width: 708px;
     min-height: 372px;
+    margin-top: 30px;
+    margin-left: 10px;
+
+    p {
+      text-align: start;
+      width: 372px;
+      height: 120px;
+      margin-left: 52px;
+      margin-top: -11px;
+      margin-bottom: -4px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .card__name {
+      margin-left: 54px;
+      margin-top: 46px;
+      margin-bottom: 31px;
+      font-size: 34px;
+      width: 420px;
+    }
+
+    .card__name--last {
+      margin-left: 54px;
+      margin-top: 47px;
+      font-size: 34px;
+      margin-bottom: 31px;
+      width: 420px;
+    }
+
+    .card__info {
+      width: 344px;
+    }
   }
 
-  .card img {
-    order: 2;
-    align-self: flex-end;
-    min-height: 368px;
-    width: 220px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .card::after {
+    left: 29px;
+    top: -159px;
+    width: 204px;
+    height: 208px;
+  }
+
+  .card:last-of-type::after {
+    top: -159px;
+    width: 207px;
+    height: 210px;
+    left: 30px;
   }
 
   .card__image {
-    margin-top: -300px;
+    margin-top: -592px;
+    margin-left: 474px;
+    order: 2;
+    align-self: flex-end;
+    height: 267px;
+    width: 159px;
+    padding-bottom: 121px;
+    padding-right: 17px;
+    position: relative;
+    top: -113px;
   }
 
-  .card h3 {
-    width: 420px;
-  }
-
-  .card p {
-    text-align: start;
-    width: 420px;
+  .card .card__image--last {
+    margin-top: -379px;
+    order: 2;
+    align-self: flex-end;
+    margin-left: 411px;
+    margin-bottom: -21px;
+    padding-top: 139px;
+    padding-right: 5px;
+    min-height: 374px;
+    width: 272px;
   }
 
   .card__catalog {
     border-top: none;
-    padding-bottom: 36px;
-    width: 420px;
+    padding-bottom: 66px;
+    width: 361px;
+    margin-left: 52px;
+    margin-top: 0;
+    font-size: 19px;
+    margin-bottom: 85px;
+  }
+
+  .card__catalog::after {
+    margin-left: 25px;
+    margin-top: 3px;
   }
 }
 
@@ -90,17 +210,108 @@
     align-items: flex-end;
     width: 570px;
     min-height: 372px;
+    margin-left: 20px;
+    margin-top: -18px;
+
+    .card__name {
+      width: 343px;
+      font-size: 33px;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 12px;
+      padding-left: 9px;
+    }
+
+    .card__name--last {
+      width: 343px;
+      margin-left: 207px;
+      margin-top: 74px;
+      padding-bottom: 35px;
+      font-size: 34px;
+    }
+
+    p {
+      width: 466px;
+      padding-top: 35px;
+    }
+
+    .card__info {
+      width: 450px;
+      padding-top: 19px;
+    }
+  }
+
+  .card::after {
+    left: -363px;
+    top: -225px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .card__catalog {
+    border-top: none;
+    padding-bottom: 68px;
+    width: 361px;
+    margin-left: 52px;
+    margin-top: 0;
+    font-size: 19px;
+    margin-bottom: 0;
+  }
+
+  .card .card__catalog--last {
+    margin-bottom: 290px;
+    padding-top: 9px;
+  }
+
+  .card .card__image--last {
+    margin-top: -38px;
+    margin-left: -481px;
+    margin-bottom: -21px;
+    padding-top: 102px;
+    padding-right: 5px;
+    min-height: 374px;
+    width: 139px;
+  }
+
+  .card .card__image--last::after {
+    top: -129px;
+    width: 207px;
+    height: 210px;
+    left: 30px;
   }
 
   .card:last-of-type {
     margin-left: 80px;
   }
 
-  .card img {
-    order: 0;
-    min-height: 107px;
+  .card:last-of-type::after {
     width: 100px;
+    height: 100px;
+    left: -360px;
+    top: -521px;
+  }
+
+  .card__image {
+    order: 0;
+    min-height: 96px;
+    width: 88px;
     padding-bottom: 0;
     padding-top: 0;
+    margin-top: -118px;
+    margin-left: 67px;
+    top: 151px;
+  }
+
+  .card__image--last {
+    margin-top: 16px;
+    order: 2;
+    align-self: flex-end;
+    margin-left: -175px;
+    margin-bottom: 0;
+    padding-top: -11px;
+    padding-right: 5px;
+    min-height: 374px;
+    width: 143px;
+    top: -345px;
   }
 }

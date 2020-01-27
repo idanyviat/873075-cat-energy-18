@@ -1,0 +1,70 @@
+.adress {
+  display: flex;
+  background-color: white;
+  margin-top: 68px;
+
+  & p {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 6px;
+    width: 140px;
+  }
+
+  & p:last-of-type {
+    font-size: 14px;
+    text-transform: none;
+    font-weight: normal;
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .adress {
+    height: 177px;
+    margin-top: -49px;
+
+    p {
+      font-size: 19px;
+      line-height: 24px;
+      padding-top: 23px;
+      width: 218px;
+      margin-left: 41px;
+    }
+
+    p:last-of-type {
+      font-size: 16px;
+      margin-left: 244px;
+      text-align: right;
+      padding-top: 24px;
+      padding-right: 41px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .adress {
+    position: absolute;
+    z-index: 3;
+    margin-top: 101px;
+    width: 569px;
+
+    p {
+      padding-top: 46px;
+      margin-left: 77px;
+    }
+
+    p:last-of-type {
+      margin-left: 32px;
+      padding-top: 46px;
+      text-align: left;
+    }
+
+    span {
+      margin-top: 20px;
+      display: block;
+    }
+  }
+}
