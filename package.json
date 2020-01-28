@@ -46,6 +46,8 @@
     "node": "8.16"
   },
   "dependencies": {
-    "del": "^5.1.0"
+    "del": "^5.1.0",
+    "gulp-ext-replace": "^0.3.0",
+    "imagemin-webp": "^5.1.0"
   }
 }
