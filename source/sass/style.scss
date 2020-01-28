@@ -23,16 +23,16 @@ html {
   box-sizing: inherit;
 }
 
-@import "/page/page-header.scss";
-@import "/page/page-main.scss";
-@import "/main/main-nav.scss";
-@import "/main/main-card.scss";
+@import "page/page-header.scss";
+@import "page/page-main.scss";
+@import "main/main-nav.scss";
+@import "main/main-card.scss";
 @import "how-work.scss";
 @import "html-academy.scss";
 @import "full-product.scss";
 @import "card.scss";
-@import "/catalog/catalog.scss";
-@import "/catalog/catalog-card.scss";
+@import "catalog/catalog.scss";
+@import "catalog/catalog-card.scss";
 @import "visability-hidden.scss";
 @import "site-list.scss";
 @import "social.scss";
@@ -44,7 +44,7 @@ html {
 @import "adress.scss";
 @import "footer.scss";
 @import "map.scss";
-@import "/catalog/catalog-last.scss";
+@import "catalog/catalog-last.scss";
 
 @font-face {
   font-family: "Oswald";
