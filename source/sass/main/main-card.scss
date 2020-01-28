@@ -45,6 +45,7 @@
   position: relative;
   margin-top: 15px;
   margin-bottom: -6px;
+  margin-left: 19px;
 }
 
 .main-card__btn {
@@ -53,7 +54,7 @@
   padding-top: 10px;
   padding-bottom: 12px;
   margin-bottom: 23px;
-  margin-left: 1px;
+  margin-left: 22px;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -62,14 +63,12 @@
   text-align: center;
 }
 
-.main-card__btn a {
-  :hover {
-    background-color: #5eaa2f;
-  }
+.main-card__btn:hover {
+  background-color: #5eaa2f;
+}
 
-  :active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+.main-card__btn:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -114,6 +113,7 @@
     top: -16px;
     left: -21px;
     z-index: 1;
+    margin-left: 0;
   }
 
   .main-card__btn {
@@ -151,26 +151,26 @@
     padding-left: 20px;
 
     h2 {
-      margin-top: 123px;
-      margin-left: 62px;
+      margin-top: 124px;
+      margin-left: 97px;
     }
 
     p {
-      margin-left: 59px;
+      margin-left: 100px;
     }
   }
 
   .main-card__item::after {
     content: "";
     background: #64a83b;
-    width: 50%;
+    width: 38%;
     position: absolute;
     height: 697px;
     top: 0;
-    left: 720px;
+    left: 953px;
   }
 
-  .main-card .container::after {
+  .main-card::after {
     content: "";
     position: relative;
     background: url("/img/index-background-desktop@1x.jpg") no-repeat;
@@ -179,8 +179,8 @@
     top: -70px;
     height: 697px;
     width: 1236px;
-    left: 109px;
-    background-position-x: -108px;
+    left: 111px;
+    background-position-x: -72px;
     background-color: #64a83b;
 
     @media (min-resolution: $retina-dppx) {
@@ -191,7 +191,7 @@
   }
 
   .main-card__product {
-    left: 430px;
+    left: 470px;
     z-index: 2;
     top: -295px;
   }
@@ -199,7 +199,7 @@
   .main-card__btn {
     position: absolute;
     top: 456px;
-    margin-left: 79px;
+    margin-left: 120px;
     font-weight: normal;
     line-height: 14px;
   }

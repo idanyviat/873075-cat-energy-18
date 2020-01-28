@@ -11,7 +11,7 @@
   background: url("/img/icon-plus-mobile.svg") no-repeat;
   background-size: 31px 31px;
   background-position-x: 125px;
-  background-position-y: 25px;
+  background-position-y: 29px;
 
   @media (min-width: $tablet-width) {
     background: url("/img/icon-plus.svg") no-repeat;
@@ -30,7 +30,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-top: 81px;
+  margin-top: 84px;
   margin-left: 38px;
   margin-bottom: 0;
 }
@@ -65,6 +65,15 @@
   background-color: #f2f2f2;
   text-decoration: none;
   border-bottom: 1px solid #ededed;
+}
+
+.full-product__button:hover {
+  background-color: #ebebeb;
+}
+
+.full-product__button:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -122,7 +131,7 @@
 
   .full-product__full {
     margin-left: 14px;
-    margin-top: 64px;
+    margin-top: 61px;
   }
 
   .full-product__button {

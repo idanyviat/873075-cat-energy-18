@@ -7,9 +7,17 @@
   @media (min-width: $tablet-width) {
     background: url("/img/bg-map-tablet@1x.png") no-repeat, url("/img/bg-map-tablet@2x.png 2x") no-repeat;
     min-width: 100%;
+    background-position-x: 83px;
   }
 
   @media (min-width: $desktop-width) {
     background: url("/img/bg-map-desktop@1x.png") no-repeat, url("/img/bg-map-desktop@2x.png 2x") no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 406px;
+    background-position-x: 228px;
   }
 }

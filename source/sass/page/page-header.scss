@@ -28,6 +28,13 @@
     width: 184px;
     height: 70px;
     padding-top: 30px;
+
+    img {
+      width: 180px;
+      position: relative;
+      top: -7px;
+      left: -5px;
+    }
   }
 }
 
@@ -37,8 +44,14 @@
     margin-left: 0;
     min-height: 65px;
     width: 200px;
-    left: 113px;
+    left: 72px;
     padding-top: 56px;
-    position: absolute;
+
+    img {
+      width: 199px;
+      position: relative;
+      top: 0;
+      left: 0;
+    }
   }
 }

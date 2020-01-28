@@ -10,7 +10,7 @@
 
   p {
     display: inline-block;
-    font-family: sans-serif;
+    font-family: ("Arial"), "Oswald", sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #444444;
@@ -93,6 +93,7 @@
   margin-left: 19px;
   margin-top: 8px;
   text-decoration: none;
+  z-index: 4;
 
   &::after {
     content: "";
@@ -104,10 +105,10 @@
     margin-top: 2px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat;
   }
+}
 
-  :active {
-    color: rgba(17, 17, 17, 0.3);
-  }
+.card__catalog a:active {
+  color: rgba(17, 17, 17, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -211,7 +212,7 @@
     width: 570px;
     min-height: 372px;
     margin-left: 20px;
-    margin-top: -18px;
+    margin-top: -22px;
 
     .card__name {
       width: 343px;

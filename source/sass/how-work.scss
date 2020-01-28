@@ -23,7 +23,7 @@
   li {
     display: flex;
     margin-top: 21px;
-    font-family: sans-serif, "Arial";
+    font-family: ("Arial"), "Oswald", sans-serif;
     padding-top: 1px;
   }
 
@@ -99,7 +99,7 @@
         width: 71px;
         height: 279px;
         font-size: 279px;
-        font-family: ("Oswald") "Arial", sans-serif;
+        font-family: ("Oswald"), "Arial", sans-serif;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
@@ -182,8 +182,7 @@
 @media (min-width: $desktop-width) {
   .how-work__item {
     flex-wrap: nowrap;
-    width: 1236px;
-    padding-left: 0;
+    width: 1300px;
 
     li span {
       padding-left: 11px;
@@ -202,6 +201,7 @@
 
     li:nth-child(2) {
       margin-right: 81px;
+      margin-left: 3px;
 
       ::after {
         z-index: -1;
@@ -210,6 +210,7 @@
 
     li:nth-child(3) {
       margin-top: 21px;
+      margin-right: 76px;
 
       ::after {
         z-index: -1;
@@ -228,10 +229,11 @@
 
   .how-work__item li {
     width: 245px;
-    margin-right: 77px;
+    margin-right: 76px;
   }
 
   .block-title {
     margin-top: 51px;
+    margin-left: 0;
   }
 }

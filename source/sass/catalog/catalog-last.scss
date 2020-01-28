@@ -7,9 +7,9 @@
   .catalog-last__name::after {
     position: absolute;
     content: "";
-    top: 2081px;
-    left: 264px;
-    width: 53px;
+    top: 1886px;
+    left: 258px;
+    width: 74px;
     height: 3px;
     border: solid #ffffff;
     border-width: 0 10px;
@@ -106,9 +106,39 @@
   margin-top: 1px;
 }
 
+.catalog-last__btn:hover {
+  background-color: #5eaa2f;
+}
+
+.catalog-last__btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
+}
+
 .catalog-last__image {
   margin-top: 40px;
-  margin-bottom: -35px;
+  margin-bottom: -121px;
+
+  p {
+    display: inline-block;
+    width: 193px;
+    position: relative;
+    top: -122px;
+    left: 43px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: ("Arial"), "Oswald", sans-serif;
+    color: white;
+  }
+
+  .catalog-last__image--gift {
+    width: 59px;
+    height: 100px;
+    position: relative;
+    top: -338px;
+    left: -85px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -222,14 +252,26 @@
 
   .catalog-last__image {
     margin-top: 58px;
-    margin-bottom: 94px;
+    margin-bottom: -17px;
+
+    p {
+      width: 147px;
+      top: -215px;
+      left: 422px;
+      text-align: left;
+    }
+
+    .catalog-last__image--gift {
+      top: -215px;
+      left: -61px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-last__name {
     margin-left: 0;
-    margin-top: 43px;
+    margin-top: 39px;
   }
 
   .catalog-last__item {
@@ -255,15 +297,15 @@
 
   .catalog-last__info {
     .catalog-last__name::after {
-      top: 1517px;
-      left: 413px;
-      width: 881px;
+      top: 1515px;
+      left: 705px;
+      width: 977px;
     }
 
     .catalog-last__name::before {
-      top: 1517px;
+      top: 1515px;
       left: 0;
-      width: 25px;
+      width: 304px;
       height: 3px;
     }
 
@@ -294,7 +336,7 @@
     }
 
     :nth-child(5) {
-      margin-bottom: 12px;
+      margin-bottom: 4px;
 
       p:nth-child(2) {
         margin-left: 165px;
@@ -304,8 +346,23 @@
   }
 
   .catalog-last__image {
-    margin-top: 158px;
-    margin-bottom: 81px;
+    margin-top: -8px;
+    margin-bottom: -234px;
+    position: relative;
+    left: 974px;
+    top: -300px;
+
+    p {
+      width: 165px;
+      top: -47px;
+      left: -207px;
+      text-align: center;
+    }
+
+    .catalog-last__image--gift {
+      top: -378px;
+      left: -322px;
+    }
   }
 
   .catalog-last__btn {

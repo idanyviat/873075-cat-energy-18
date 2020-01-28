@@ -3,7 +3,7 @@
   background-color: white;
   margin-top: 68px;
 
-  & p {
+  p {
     font-size: 15px;
     line-height: 20px;
     text-transform: uppercase;
@@ -12,11 +12,16 @@
     width: 140px;
   }
 
-  & p:last-of-type {
+  p:last-of-type {
     font-size: 14px;
     text-transform: none;
     font-weight: normal;
-    font-family: sans-serif;
+    font-family: ("Arial"), "Oswald", sans-serif;
+  }
+
+  span {
+    display: block;
+    margin-top: 0;
   }
 }
 
@@ -41,6 +46,10 @@
       padding-right: 41px;
       line-height: 20px;
     }
+
+    span {
+      margin-top: 10px;
+    }
   }
 }
 
@@ -49,7 +58,8 @@
     position: absolute;
     z-index: 3;
     margin-top: 101px;
-    width: 569px;
+    width: 567px;
+    height: 198px;
 
     p {
       padding-top: 46px;
@@ -57,14 +67,13 @@
     }
 
     p:last-of-type {
-      margin-left: 32px;
+      margin-left: 34px;
       padding-top: 46px;
       text-align: left;
     }
 
     span {
       margin-top: 20px;
-      display: block;
     }
   }
 }
