@@ -48,6 +48,7 @@
   "dependencies": {
     "del": "^5.1.0",
     "gulp-ext-replace": "^0.3.0",
-    "imagemin-webp": "^5.1.0"
+    "imagemin-webp": "^5.1.0",
+    "sass-autoprefixer": "^1.0.1"
   }
 }

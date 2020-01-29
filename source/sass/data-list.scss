@@ -379,7 +379,7 @@ textarea::-moz-placeholder {
 textarea:-ms-input-placeholder {
   /* IE 10+ */
   width: 320px;
-  height: 18px;
+  height: 150px;
   font-family: ("Oswald"), "Arial", sans-serif;
   font-size: 20px;
   font-weight: normal;
@@ -748,7 +748,7 @@ textarea:-moz-placeholder {
   }
 
   .data-list__field p::after {
-    top: 944px;
+    top: 910px;
   }
 
   .data-list__info {
@@ -871,5 +871,41 @@ textarea:-moz-placeholder {
       margin-top: 74px;
       margin-left: 81px;
     }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .data-list__checkbox label {
+    flex-basis: 193px;
+  }
+
+  .data-list__checkbox p::after {
+    top: 1254px;
+  }
+
+  .data-list__radio {
+    height: 216px;
+  }
+
+  .data-list p {
+    margin-top: 22px;
+
+    ::after {
+      top: 724px;
+    }
+  }
+
+  .data-list__field p::after {
+    top: 941px;
+  }
+
+  .data-list__data input:-ms-input-placeholder {
+    width: 457px;
+    height: 45px;
+  }
+
+  .data-list__age input:-ms-input-placeholder {
+    width: 421px;
+    height: 45px;
   }
 }

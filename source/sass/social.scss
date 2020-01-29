@@ -84,7 +84,6 @@
     margin-right: -108px;
     padding-right: 172px;
 
-
     .social__item--vk {
       margin-top: 46px;
       margin-right: 36px;
@@ -102,5 +101,11 @@
       margin-left: 0;
       margin-right: 29px;
     }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .social .social__item--vk {
+    margin-top: 40px;
   }
 }

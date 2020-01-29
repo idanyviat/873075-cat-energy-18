@@ -397,3 +397,10 @@
     }
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .life-exp__image img {
+    margin-top: 61px;
+    width: 615px;
+  }
+}

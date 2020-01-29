@@ -204,3 +204,28 @@
     line-height: 14px;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  .main-card__product {
+    left: 437px;
+    top: -230px;
+    width: 500px;
+  }
+
+  .main-card__item {
+    h2 {
+      margin-left: 61px;
+      text-align: left;
+    }
+
+    p {
+      margin-left: -156px;
+      margin-top: 84px;
+    }
+  }
+
+  .main-card__btn {
+    margin-left: 82px;
+  }
+}

@@ -232,3 +232,9 @@
     }
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .catalog-card__image {
+    left: 57px;
+  }
+}

@@ -81,3 +81,9 @@
     flex-basis: 100%;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .catalog :nth-child(2n) img {
+    left: 5px;
+  }
+}

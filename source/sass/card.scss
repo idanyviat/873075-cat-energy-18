@@ -316,3 +316,13 @@
     top: -345px;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card__image {
+    top: 72px;
+  }
+
+  .card__image--last {
+    top: -446px;
+  }
+}
