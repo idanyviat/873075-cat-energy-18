@@ -121,6 +121,17 @@
   }
 }
 
+.life-exp__image::before {
+  background: url("/img/before-mobile@1x.png") no-repeat;
+  width: 313px;
+  height: 250px;
+  content: "";
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("/img/before-desktop@2x.png") no-repeat;
+  }
+}
+
 .life-exp__toggle {
   font-size: 16px;
   text-transform: uppercase;
@@ -158,6 +169,18 @@
 
   input:checked[type="radio"]::before {
     left: 40px;
+  }
+
+  span {
+    border-bottom: 1px dotted black;
+  }
+
+  span:hover {
+    border-bottom: 1px solid black;
+  }
+
+  span:active {
+    border-bottom: none;
   }
 }
 
@@ -218,6 +241,15 @@
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
     }
 
+    input[type="radio"]::before:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    input[type="radio"]::before:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: solid 2px #68b738;
+    }
+
     input[type="radio"]::after {
       content: "";
       position: absolute;
@@ -241,12 +273,34 @@
   .life-exp__image {
     width: 768px;
     height: 667px;
+  }
 
-    img {
-      flex-basis: 100%;
-      margin-top: 4px;
-      margin-right: 48px;
-      margin-bottom: -91px;
+  .life-exp__image::before {
+    background: url("/img/before-tablet@1x.png") no-repeat;
+    width: 336px;
+    height: 535px;
+    content: "";
+    position: relative;
+    left: -199px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("/img/before-tablet@2x.png") no-repeat;
+    }
+  }
+
+  .life-exp__image::after {
+    content: "";
+    background: url("/img/after-tablet@1x.png") no-repeat;
+    width: 243px;
+    height: 535px;
+    position: relative;
+    top: -560px;
+    left: 89px;
+    z-index: 0;
+    background-position-x: -338px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("/img/after-tablet@2x.png") no-repeat;
     }
   }
 
@@ -316,7 +370,7 @@
       margin-top: 142px;
       width: 436px;
       line-height: 24px;
-      margin-bottom: 18px;
+      margin-bottom: 13px;
 
       :last-of-type {
         text-transform: uppercase;
@@ -338,7 +392,7 @@
       font-family: ("Oswald"), "Arial", sans-serif;
       flex-direction: row;
       margin-bottom: 79px;
-      margin-top: 13px;
+      margin-top: 40px;
       padding-left: 0;
       padding-top: 8px;
       font-size: 19px;
@@ -356,15 +410,35 @@
     height: 446px;
     margin-bottom: 0;
 
-    img {
-      margin-right: -116px;
-      margin-top: 10px;
-      margin-bottom: 30px;
+    .life-exp__image::before {
+      background: url("/img/before-desktop@1x@1x.png") no-repeat;
+      width: 363px;
+      height: 560px;
+      left: -104px;
+      top: 10px;
+
+      @media (min-resolution: $retina-dppx) {
+        background: url("/img/before-desktop@2x@2x.png") no-repeat;
+      }
+    }
+
+    .life-exp__image::after {
+      background: url("/img/after-desktop@1x.png") no-repeat;
+      width: 218px;
+      height: 535px;
+      top: -580px;
+      left: 182px;
+      z-index: 0;
+      background-position-x: -357px;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("/img/after-desktop@2x.png") no-repeat;
     }
   }
 
   .life-exp__name {
-    margin-top: 48px;
+    margin-top: 49px;
   }
 
   .life-exp__form {
@@ -377,12 +451,12 @@
     .life-exp__form--dowmweight {
       margin-top: 94px;
       left: 33px;
-      top: 19px;
+      top: 11px;
     }
 
     .life-exp__form--downtime {
       left: 16px;
-      top: 17px;
+      top: 12px;
       margin-top: 96px;
     }
 

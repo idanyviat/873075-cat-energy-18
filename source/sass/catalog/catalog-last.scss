@@ -116,14 +116,22 @@
 }
 
 .catalog-last__image {
-  margin-top: 40px;
+  height: 379px;
+  width: 320px;
+  margin-top: 37px;
   margin-bottom: -121px;
+  background: url("/img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: 293px 286px;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("/img/gift-photo-mobile@2x.jpg") no-repeat;
+  }
 
   p {
     display: inline-block;
     width: 193px;
     position: relative;
-    top: -122px;
+    top: 169px;
     left: 43px;
     text-align: center;
     font-size: 16px;
@@ -136,7 +144,7 @@
     width: 59px;
     height: 100px;
     position: relative;
-    top: -338px;
+    top: -48px;
     left: -85px;
   }
 }
@@ -203,7 +211,7 @@
   .catalog-last__info {
     .catalog-last__name::after {
       top: 2599px;
-      left: 413px;
+      left: 540px;
       width: 344px;
     }
 
@@ -256,14 +264,24 @@
 
     p {
       width: 147px;
-      top: -215px;
+      top: -14px;
       left: 422px;
       text-align: left;
     }
 
     .catalog-last__image--gift {
-      top: -215px;
+      top: -12px;
       left: -61px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 734px;
+      height: 369px;
+      background: url("/img/gift-photo-tablet@1x.jpg") no-repeat;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("/img/gift-photo-tablet@2x.jpg") no-repeat;
     }
   }
 }
@@ -298,13 +316,13 @@
   .catalog-last__info {
     .catalog-last__name::after {
       top: 1515px;
-      left: 705px;
+      left: 585px;
       width: 977px;
     }
 
     .catalog-last__name::before {
       top: 1515px;
-      left: 0;
+      left: -120px;
       width: 304px;
       height: 3px;
     }
@@ -349,19 +367,27 @@
     margin-top: -8px;
     margin-bottom: -234px;
     position: relative;
-    left: 974px;
-    top: -300px;
+    left: 979px;
+    top: -294px;
 
     p {
       width: 165px;
-      top: -47px;
-      left: -207px;
+      top: 174px;
+      left: 41px;
       text-align: center;
     }
 
     .catalog-last__image--gift {
-      top: -378px;
-      left: -322px;
+      top: -156px;
+      left: -73px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background: url("/img/gift-photo-desktop@1x.jpg") no-repeat;
+    }
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("/img/gift-photo-desktop@2x.jpg") no-repeat;
     }
   }
 

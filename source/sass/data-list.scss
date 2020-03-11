@@ -36,24 +36,34 @@
     width: 204px;
     margin-bottom: -4px;
     margin-left: 15px;
+    outline: none;
+    border-top: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+  }
 
-    :hover {
-      border-color: #cdcdcd;
-    }
+  input:hover {
+    border-color: #cdcdcd;
+    border-top: 2px solid #cdcdcd;
+    border-left: 2px solid #cdcdcd;
+  }
 
-    :active {
-      border-color: #444444;
-    }
+  input:active {
+    border-color: #444444;
+    border-top: 2px solid #444444;
+    border-left: 2px solid #444444;
+  }
 
-    :invalid {
-      border-color: #ff8282;
-    }
+  input:invalid {
+    border-color: #ff8282;
+    border-top: 2px solid #ff8282;
+    border-left: 2px solid #ff8282;
   }
 
   input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     width: 60px;
-    height: 18px;
+    height: 22px;
+    padding-left: 17px;
     font-family: ("Oswald"), "Arial", sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -62,12 +72,14 @@
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
+    text-transform: uppercase;
   }
 
   input::-moz-placeholder {
     /* Firefox 19+ */
     width: 60px;
     height: 18px;
+    padding-left: 17px;
     font-family: ("Oswald"), "Arial", sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -76,12 +88,14 @@
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
+    text-transform: uppercase;
   }
 
   input:-ms-input-placeholder {
     /* IE 10+ */
     width: 60px;
     height: 18px;
+    padding-left: 17px;
     font-family: ("Oswald"), "Arial", sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -90,12 +104,14 @@
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
+    text-transform: uppercase;
   }
 
   input:-moz-placeholder {
     /* Firefox 18- */
     width: 60px;
     height: 18px;
+    padding-left: 17px;
     font-family: ("Oswald"), "Arial", sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -104,6 +120,7 @@
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
+    text-transform: uppercase;
   }
 }
 
@@ -120,6 +137,7 @@
   background-size: 17px;
   background-position-x: 178px;
   background-position-y: 13px;
+  outline: none;
 }
 
 .data-list__data--phone input {
@@ -134,13 +152,14 @@
   height: 45px;
   margin-bottom: 14px;
   margin-left: 10px;
-  padding-left: 11px;
+  padding-left: 15px;
   background-size: 13px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   width: 203px;
   background-position-x: 178px;
   background-position-y: 16px;
+  outline: none;
 }
 
 .name input {
@@ -157,12 +176,32 @@
     height: 45px;
     margin-bottom: 14px;
     margin-left: 8px;
+    outline: none;
+  }
+
+  input:hover {
+    border-color: #cdcdcd;
+    border-top: 2px solid #cdcdcd;
+    border-left: 2px solid #cdcdcd;
+  }
+
+  input:active {
+    border-color: #444444;
+    border-top: 2px solid #444444;
+    border-left: 2px solid #444444;
+  }
+
+  input:invalid {
+    border-color: #ff8282;
+    border-top: 2px solid #ff8282;
+    border-left: 2px solid #ff8282;
   }
 
   input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     width: 60px;
     height: 18px;
+    padding-left: 17px;
     font-family: ("Oswald"), "Arial", sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -177,6 +216,7 @@
     /* Firefox 19+ */
     width: 60px;
     height: 18px;
+    padding-left: 17px;
     font-family: ("Oswald"), "Arial", sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -191,6 +231,7 @@
     /* IE 10+ */
     width: 60px;
     height: 18px;
+    padding-left: 17px;
     font-family: ("Oswald"), "Arial", sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -205,6 +246,7 @@
     /* Firefox 18- */
     width: 60px;
     height: 18px;
+    padding-left: 17px;
     font-family: ("Oswald"), "Arial", sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -311,6 +353,70 @@
     border-width: 0 10px;
     margin-right: -100%;
   }
+
+  input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    width: 60px;
+    height: 18px;
+    padding-left: 5px;
+    font-family: ("Oswald"), "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  input::-moz-placeholder {
+    /* Firefox 19+ */
+    width: 60px;
+    height: 18px;
+    padding-left: 5px;
+    font-family: ("Oswald"), "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  input:-ms-input-placeholder {
+    /* IE 10+ */
+    width: 60px;
+    height: 18px;
+    padding-left: 5px;
+    font-family: ("Oswald"), "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  input:-moz-placeholder {
+    /* Firefox 18- */
+    width: 60px;
+    height: 18px;
+    padding-left: 5px;
+    font-family: ("Oswald"), "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+  }
 }
 
 .data-list__field {
@@ -345,7 +451,10 @@ textarea {
   margin-top: 10px;
   margin-left: 2px;
   margin-bottom: -7px;
+  padding-left: 17px;
+  padding-top: 14px;
   text-transform: uppercase;
+  outline: none;
 }
 
 textarea::-webkit-input-placeholder {
@@ -737,7 +846,7 @@ textarea:-moz-placeholder {
     min-width: 1246px;
 
     p {
-      margin-left: 72px;
+      margin-left: 0;
       margin-top: 30px;
       font-size: 33px;
     }
@@ -748,19 +857,19 @@ textarea:-moz-placeholder {
   }
 
   .data-list__field p::after {
-    top: 910px;
+    top: 945px;
   }
 
   .data-list__info {
     width: 611px;
     font-weight: 700;
-    margin-left: 29px;
+    margin-left: -41px;
   }
 
   .data-list__radio {
     width: 570px;
     height: 196px;
-    margin-left: 33px;
+    margin-left: 81px;
     margin-top: 31px;
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
@@ -782,7 +891,7 @@ textarea:-moz-placeholder {
     }
 
     font-size: 20px;
-    margin-left: 69px;
+    margin-left: 0;
     font-weight: 700;
   }
 
@@ -806,7 +915,8 @@ textarea:-moz-placeholder {
   }
 
   textarea {
-    margin-left: 23px;
+    margin-top: 48px;
+    margin-left: 0;
     height: 175px;
     margin-bottom: 32px;
     min-width: 1220px;
@@ -824,17 +934,17 @@ textarea:-moz-placeholder {
 
   .data-list__mail {
     :nth-child(3) {
-      margin-left: 23px;
+      margin-left: 71px;
     }
   }
 
   .data-list__checkbox {
     height: 350px;
     width: 1300px;
-    margin-bottom: 2px;
+    margin-bottom: -5px;
 
     p {
-      margin-right: 627px;
+      margin-right: 767px;
     }
 
     p::after {
@@ -842,8 +952,8 @@ textarea:-moz-placeholder {
     }
 
     label {
-      flex-basis: 215px;
-      margin-left: 110px;
+      flex-basis: 284px;
+      margin-left: 41px;
     }
 
     label::before {
@@ -851,15 +961,20 @@ textarea:-moz-placeholder {
       left: -39px;
     }
 
+    :nth-child(8) {
+      flex-basis: 220px;
+    }
+
     :nth-child(9) {
-      margin-left: 54px;
+      margin-left: 40px;
+      flex-basis: 100px;
     }
 
     .data-list__checkbox--bt {
       flex-basis: 44%;
       width: 568px;
       height: 50px;
-      margin-left: 69px;
+      margin-left: 15px;
       margin-top: 59px;
       margin-bottom: 99px;
       padding-left: 0;
