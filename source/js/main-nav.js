@@ -1,6 +1,6 @@
-  var navMain = document.querySelector(".main-nav");
-  var navToggle = document.querySelector(".main-nav__toggle");
-  var navSiteList = document.querySelector(".site-list")
+const navMain = document.querySelector(".main-nav");
+const navToggle = document.querySelector(".main-nav__toggle");
+const navSiteList = document.querySelector(".site-list")
 
   navMain.classList.remove("main-nav--nojs");
 
